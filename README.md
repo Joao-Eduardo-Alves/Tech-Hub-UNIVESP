@@ -57,9 +57,10 @@ O projeto encontra-se atualmente em **DESENVOLVIMENTO ATIVO**.
 
 ## Estrutura e Arquitetura
 
+- Arquitetura frontend-first com foco em simplicidade, escalabilidade gradual e experiência do usuário
+- Estrutura preparada para deploy contínuo utilizando Vercel
 - Componentização modular e reutilizável
 - Organização baseada em dados estruturados (DRPs, polos)
-- Estrutura preparada para escalabilidade
 - Design system consistente com variáveis CSS
 - PWA (Progressive Web App) configurado
 
