@@ -5,7 +5,7 @@ import AppLayout from "./components/layout/AppLayout";
 import Home from "./pages/Home";
 import Cursos from "./pages/Cursos";
 import Vestibulando from "./pages/Vestibulando";
-import Calouro from "./pages/GuiaDoCalouro/calouro";
+import Calouro from "./pages/GuiaDoCalouro/Calouro";
 import Carreira from "./pages/CarreiraTech/Carreira";
 import CarreiraRoadmaps from "./pages/CarreiraTech/CarreiraRoadmaps";
 import CarreiraDicas from "./pages/CarreiraTech/CarreiraDicas";
