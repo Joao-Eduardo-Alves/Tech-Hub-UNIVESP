@@ -1,0 +1,25 @@
+const DRP02 = [
+  { city: "Bertioga", wpp: "" },
+  { city: "Cubatão", wpp: "" },
+  { city: "Guarujá", wpp: "" },
+  { city: "Ilha Comprida", wpp: "" },
+  { city: "Itanhaém", wpp: "" },
+  { city: "Itariri", wpp: "" },
+  { city: "Jacupiranga", wpp: "" },
+  { city: "Juquiá", wpp: "" },
+  { city: "Mongaguá", wpp: "" },
+  { city: "Pariquera-Açu", wpp: "" },
+  { city: "Pedro de Toledo", wpp: "" },
+  { city: "Praia Grande", wpp: "" },
+  { city: "Registro", wpp: "" },
+  { city: "Santos", wpp: "" },
+  { city: "São Vicente", wpp: "" },
+  { city: "Sete Barras", wpp: "" },
+  { city: "Cajati", wpp: "" },
+  { city: "Eldorado", wpp: "" },
+  { city: "Iguape", wpp: "" },
+  { city: "Miracatu", wpp: "" },
+  { city: "Peruíbe", wpp: "" },
+];
+
+export default DRP02;
