@@ -159,7 +159,7 @@ export default function Produtos() {
         <SectionHeader
           badge="Produtos"
           title="Produtos Recomendados"
-          description="Ferramentas, livros e produtos personalizados para turbinar seus estudos e mostrar seu orgulho Univesp."
+          description="Ferramentas, livros e produtos personalizados para turbinar seus estudos e mostrar seu orgulho UNIVESP."
         />
 
         <div className="flex justify-center mb-10">
