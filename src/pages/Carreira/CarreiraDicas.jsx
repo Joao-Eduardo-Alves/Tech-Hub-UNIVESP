@@ -1,6 +1,6 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import SectionHeader from "../../components/shared/SectionHeader";
-import { careerTopics } from "../CarreiraTech/Carreira"; // ideal extrair depois
+import { careerTopics } from "./Carreira"; // ideal extrair depois
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

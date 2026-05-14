@@ -9,7 +9,9 @@ const navItems = [
   { label: "Guia do Calouro", path: "/calouro" },
   { label: "Guia de Polos", path: "/polos" },
   { label: "Produtos", path: "/produtos" },
-  { label: "Carreira Tech", path: "/carreira" },
+  { label: "Cyber Arena", path: "/cyber-arena" },
+  { label: "Ctrl + Shape", path: "/ctrl-shape" },
+  { label: "Carreira", path: "/carreira" },
   { label: "Cursos", path: "/cursos" },
   { label: "Guia do Vestibulando", path: "/vestibulando" },
 ];

@@ -35,7 +35,7 @@ O projeto encontra-se atualmente em **DESENVOLVIMENTO ATIVO**.
 
 ### Fase atual do projeto:
 
-- Produtos - Página voltada à produtos personalizados com foco em identidade visual e recomendações de materiais de estudos.
+- Página "Cyber Arena" - Página voltada a integração de estudantes por meio de interesses comuns em jogos virtuais
 
 ---
 
