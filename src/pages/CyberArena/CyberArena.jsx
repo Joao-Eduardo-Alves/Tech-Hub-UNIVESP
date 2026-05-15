@@ -12,7 +12,7 @@ const atleticas = [
     descricao:
       "Disciplina, foco e vitória. O clube oficial de Counter-Strike 2 da UNIVESP.",
     brasao: IronWolves,
-    discord: "https://discord.gg/ironwolves",
+    discord: "https://discord.gg/ukRkzQ7dr2",
     glowColor: "#ef4444",
   },
   {
@@ -20,7 +20,7 @@ const atleticas = [
     descricao:
       "Precisão, frieza e vitória. Entre para a elite tática do Valorant da UNIVESP.",
     brasao: PolarVanguards,
-    discord: "https://discord.gg/polarvanguards",
+    discord: "https://discord.gg/wp74haQC2t",
     glowColor: "#06b6d4",
   },
   {
@@ -28,7 +28,7 @@ const atleticas = [
     descricao:
       "Estratégia, caos e glória. A comunidade de League of Legends da UNIVESP.",
     brasao: RiftRavens,
-    discord: "https://discord.gg/riftravens",
+    discord: "https://discord.gg/UKPqZNHcZ5",
     glowColor: "#a855f7",
   },
   {
@@ -36,7 +36,7 @@ const atleticas = [
     descricao:
       "Construímos mais que mundos!. A comunidade de Minecraft da UNIVESP.",
     brasao: BlockforgeUnion,
-    discord: "https://discord.gg/blockforgeunion",
+    discord: "https://discord.gg/NXxY2zFpZZ",
     glowColor: "#22c55e",
   },
 ];
