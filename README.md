@@ -58,7 +58,7 @@ O projeto encontra-se atualmente em **DESENVOLVIMENTO ATIVO**.
 ## Estrutura e Arquitetura
 
 - Arquitetura frontend-first com foco em simplicidade, escalabilidade gradual e experiência do usuário
-- Estrutura preparada para deploy contínuo utilizando Vercel
+- Aplicação já hospedada e em deploy contínuo utilizando Vercel.
 - Componentização modular e reutilizável
 - Organização baseada em dados estruturados (DRPs, polos)
 - Design system consistente com variáveis CSS
@@ -127,6 +127,14 @@ A proposta é evoluir gradualmente para um ecossistema digital capaz de conectar
 # 🤝 Contribuição
 
 Sugestões, ideias e feedbacks são bem-vindos durante o desenvolvimento do projeto.
+
+---
+
+# 🔗 Link da aplicação hospedada na Vercel:
+
+https://tech-hub-univesp.vercel.app/
+
+---
 
 # 📄 Licença
 
