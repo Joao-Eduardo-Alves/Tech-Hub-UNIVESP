@@ -6,23 +6,25 @@ import Home from "./pages/Home";
 import Cursos from "./pages/Cursos";
 import Vestibulando from "./pages/Vestibulando";
 import Calouro from "./pages/GuiaDoCalouro/Calouro";
-import Carreira from "./pages/CarreiraTech/Carreira";
-import CarreiraRoadmaps from "./pages/CarreiraTech/CarreiraRoadmaps";
-import CarreiraDicas from "./pages/CarreiraTech/CarreiraDicas";
-import CarreiraFerramentas from "./pages/CarreiraTech/CarreiraFerramentas";
+import Carreira from "./pages/Carreira/Carreira";
+import CarreiraRoadmaps from "./pages/Carreira/CarreiraRoadmaps";
+import CarreiraDicas from "./pages/Carreira/CarreiraDicas";
+import CarreiraFerramentas from "./pages/Carreira/CarreiraFerramentas";
 import Produtos from "./pages/Produtos";
 import Polos from "./pages/Polos";
 import Manual from "./pages/GuiaDoCalouro/ManualdoAluno";
 import DicaTrabalhoEstudo from "./pages/GuiaDoCalouro/DicaTrabalhoEstudo";
 import ScrollToTop from "./components/shared/ScrollToTop";
-import Frontend from "./pages/CarreiraTech/CarreiraTechSubPages/roadmaps/Frontend";
-import Backend from "./pages/CarreiraTech/CarreiraTechSubPages/roadmaps/Backend";
-import Hardware from "./pages/CarreiraTech/CarreiraTechSubPages/roadmaps/Hardware";
-import Ia from "./pages/CarreiraTech/CarreiraTechSubPages/roadmaps/Ia";
-import Dados from "./pages/CarreiraTech/CarreiraTechSubPages/roadmaps/Dados";
-import Estagio from "./pages/CarreiraTech/CarreiraTechSubPages/dicas/Estagio";
-import Portfolio from "./pages/CarreiraTech/CarreiraTechSubPages/dicas/Portfolio";
-import Linkedin from "./pages/CarreiraTech/CarreiraTechSubPages/dicas/Linkedin";
+import Frontend from "./pages/Carreira/CarreiraSubPages/roadmaps/Frontend";
+import Backend from "./pages/Carreira/CarreiraSubPages/roadmaps/Backend";
+import Hardware from "./pages/Carreira/CarreiraSubPages/roadmaps/Hardware";
+import Ia from "./pages/Carreira/CarreiraSubPages/roadmaps/Ia";
+import Dados from "./pages/Carreira/CarreiraSubPages/roadmaps/Dados";
+import Estagio from "./pages/Carreira/CarreiraSubPages/dicas/Estagio";
+import Portfolio from "./pages/Carreira/CarreiraSubPages/dicas/Portfolio";
+import Linkedin from "./pages/Carreira/CarreiraSubPages/dicas/Linkedin";
+import CyberArena from "./pages/CyberArena/CyberArena";
+import CtrlShape from "./pages/CtrlShape/CtrlShape";
 
 const App = () => {
   return (
@@ -55,6 +57,8 @@ const App = () => {
           <Route path="/polos" element={<Polos />} />
           <Route path="/manual" element={<Manual />} />
           <Route path="/dicaTrabalhoEstudo" element={<DicaTrabalhoEstudo />} />
+          <Route path="/cyber-arena" element={<CyberArena />} />
+          <Route path="/ctrl-shape" element={<CtrlShape />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
