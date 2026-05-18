@@ -35,7 +35,7 @@ O projeto encontra-se atualmente em **DESENVOLVIMENTO ATIVO**.
 
 ### Fase atual do projeto:
 
-- Página "Cyber Arena" - Página voltada a integração de estudantes por meio de interesses comuns em jogos virtuais
+- Produtos - Página voltada à produtos personalizados com foco em identidade visual e recomendações de materiais de estudos.
 
 ---
 
@@ -111,7 +111,7 @@ Este projeto está em desenvolvimento contínuo e muitas funcionalidades ainda e
 ## Principais funcionalidades futuras da plataforma
 
 - [ ] Produtos - Página voltada à produtos personalizados com foco em identidade visual e recomendações de materiais de estudos EM PROGRESSO...
-- [ ] Página "Cyber Arena" - Página voltada a integração de estudantes por meio de interesses comuns em jogos virtuais
+- [x] Página "Cyber Arena" - Página voltada a integração de estudantes por meio de interesses comuns em jogos virtuais
 - [ ] Página "Ctrl + Shape" - Página voltada a integração de estudantes ao lifestyle fitness, integrando um grupo dedicado na plataforma "GymRats".
 
 ---
