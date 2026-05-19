@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import SectionHeader from "../components/shared/SectionHeader";
-import { getProducts } from "@/api/api";
+import { getProducts } from "@/services/api";
 
 import {
   Laptop,
