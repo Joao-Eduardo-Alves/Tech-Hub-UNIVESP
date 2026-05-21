@@ -46,6 +46,8 @@ export default function Produtos() {
     loadProducts();
   }, []);
 
+  const filtered = products.filter((p) => p.category === activeCategory);
+
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,12 +80,12 @@ export default function Produtos() {
             key={activeCategory}
             className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
-            {products.map((product, i) => {
+            {filtered.map((product, i) => {
               const Icon = iconMap[product.icon];
 
               return (
                 <motion.div
-                  key={product.id}
+                  key={product.itemId}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08 }}
