@@ -92,7 +92,8 @@ export const selectedProducts = [
     // moletom engenharia computação PRETO
     itemId: 58210791549,
     idPersonalizado: "eng-moletom-preto",
-    customImage: "/vestuario/eng-computacao/moletom-preto/costas.png",
+    customImage:
+      "/personalizados/eng-computacao/vestuario/moletom-preto/costas.png",
     title: "Moletom preto engenharia da Computação TURMA 2026",
     description:
       "Moletom personalizado com estampa da engenharia da computação.",
@@ -105,7 +106,8 @@ export const selectedProducts = [
     // moletom engenharia computação BRANCO
     itemId: 58210791549,
     idPersonalizado: "eng-moletom-branco",
-    customImage: "/vestuario/eng-computacao/moletom-branco/costas.png",
+    customImage:
+      "/personalizados/eng-computacao/vestuario/moletom-branco/costas.png",
     title: "Moletom branco engenharia da Computação TURMA 2026",
     description:
       "Moletom personalizado com estampa da engenharia da computação.",
@@ -115,9 +117,10 @@ export const selectedProducts = [
   },
   {
     // camiseta engenharia computação PRETA
-    itemId: "",
+    itemId: 58210791549,
     idPersonalizado: "eng-camiseta-preta",
-    customImage: "/vestuario/eng-computacao/camiseta-preta/costas.png",
+    customImage:
+      "/personalizados/eng-computacao/vestuario/camiseta-preta/costas.png",
     title: "Camiseta preta engenharia da Computação TURMA 2026",
     description:
       "Camiseta personalizada com estampa da engenharia da computação.",
@@ -127,9 +130,10 @@ export const selectedProducts = [
   },
   {
     // camiseta engenharia computação BRANCA
-    itemId: "",
+    itemId: 58210791549,
     idPersonalizado: "eng-camiseta-branca",
-    customImage: "/vestuario/eng-computacao/camiseta-branca/costas.png",
+    customImage:
+      "/personalizados/eng-computacao/vestuario/camiseta-branca/costas.png",
     title: "Camiseta branca engenharia da Computação TURMA 2026",
     description:
       "Camiseta personalizada com estampa da engenharia da computação.",
@@ -137,12 +141,24 @@ export const selectedProducts = [
     icon: "shirt",
     tag: "Vestuário",
   },
+  {
+    // caneca engenharia computação
+    itemId: 58200654758,
+    idPersonalizado: "eng-caneca",
+    customImage: "/personalizados/eng-computacao/itens/caneca.png",
+    title: "Caneca engenharia da Computação TURMA 2026",
+    description:
+      "Caneca personalizada com estampa da engenharia da computação.",
+    category: "eng-comp",
+    icon: "sparkles",
+    tag: "Itens",
+  },
   // =================================== TI ===================================
   {
     // moletom tecnologia da informação PRETO
     itemId: "",
     idPersonalizado: "ti-moletom-preto",
-    customImage: "/vestuario/ti/moletom-preto/costas.png",
+    customImage: "/personalizados/ti/vestuario/moletom-preto/costas.png",
     title: "Moletom preto Tecnologia da Informação TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -154,7 +170,7 @@ export const selectedProducts = [
     // moletom tecnologia da informação BRANCO
     itemId: "",
     idPersonalizado: "ti-moletom-branco",
-    customImage: "/vestuario/ti/moletom-branco/costas.png",
+    customImage: "/personalizados/ti/vestuario/moletom-branco/costas.png",
     title: "Moletom branco Tecnologia da Informação TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -166,7 +182,7 @@ export const selectedProducts = [
     // camiseta tecnologia da informação PRETA
     itemId: "",
     idPersonalizado: "ti-camiseta-preta",
-    customImage: "/vestuario/ti/camiseta-preta/costas.png",
+    customImage: "/personalizados/ti/vestuario/camiseta-preta/costas.png",
     title: "Camiseta preta Tecnologia da Informação TURMA 2026",
     description:
       "Camiseta personalizada com estampa da tecnologia da informação.",
@@ -178,7 +194,7 @@ export const selectedProducts = [
     // camiseta tecnologia da informação BRANCA
     itemId: "",
     idPersonalizado: "ti-camiseta-branca",
-    customImage: "/vestuario/ti/camiseta-branca/costas.png",
+    customImage: "/personalizados/ti/vestuario/camiseta-branca/costas.png",
     title: "Camiseta branca Tecnologia da Informação TURMA 2026",
     description:
       "Camiseta personalizada com estampa da tecnologia da informação.",
@@ -191,7 +207,8 @@ export const selectedProducts = [
     // moletom ciencia de dados PRETO
     itemId: "",
     idPersonalizado: "ciencia-dados-moletom-preto",
-    customImage: "/vestuario/ciencia-dados/moletom-preto/costas.png",
+    customImage:
+      "/personalizados/ciencia-dados/vestuario/moletom-preto/costas.png",
     title: "Moletom preto Ciência de Dados TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -203,7 +220,8 @@ export const selectedProducts = [
     // moletom ciencia de dados BRANCO
     itemId: "",
     idPersonalizado: "ciencia-dados-moletom-branco",
-    customImage: "/vestuario/ciencia-dados/moletom-branco/costas.png",
+    customImage:
+      "/personalizados/ciencia-dados/vestuario/moletom-branco/costas.png",
     title: "Moletom branco Ciência de Dados TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -215,7 +233,8 @@ export const selectedProducts = [
     // camiseta ciencia de dados PRETA
     itemId: "",
     idPersonalizado: "ciencia-dados-camiseta-preta",
-    customImage: "/vestuario/ciencia-dados/camiseta-preta/costas.png",
+    customImage:
+      "/personalizados/ciencia-dados/vestuario/camiseta-preta/costas.png",
     title: "Camiseta preta Ciência de Dados TURMA 2026",
     description: "Camiseta personalizada com estampa da ciência de dados.",
     category: "ciencia-dados",
@@ -226,7 +245,8 @@ export const selectedProducts = [
     // camiseta ciencia de dados BRANCA
     itemId: "",
     idPersonalizado: "ciencia-dados-camiseta-branca",
-    customImage: "/vestuario/ciencia-dados/camiseta-branca/costas.png",
+    customImage:
+      "/personalizados/ciencia-dados/vestuario/camiseta-branca/costas.png",
     title: "Camiseta branca Ciência de Dados TURMA 2026",
     description: "Camiseta personalizada com estampa da ciência de dados.",
     category: "ciencia-dados",
@@ -238,7 +258,7 @@ export const selectedProducts = [
     // moletom inteligencia artificial PRETO
     itemId: "",
     idPersonalizado: "ia-moletom-preto",
-    customImage: "/vestuario/ia/moletom-preto/costas.png",
+    customImage: "/personalizados/ia/vestuario/moletom-preto/costas.png",
     title: "Moletom preto Inteligência Artificial TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -250,7 +270,7 @@ export const selectedProducts = [
     // moletom inteligencia artificial BRANCO
     itemId: "",
     idPersonalizado: "ia-moletom-branco",
-    customImage: "/vestuario/ia/moletom-branco/costas.png",
+    customImage: "/personalizados/ia/vestuario/moletom-branco/costas.png",
     title: "Moletom branco Inteligência Artificial TURMA 2026",
     description:
       "Moletom personalizado com estampa da tecnologia da informação.",
@@ -262,7 +282,7 @@ export const selectedProducts = [
     // camiseta inteligencia artificial PRETA
     itemId: "",
     idPersonalizado: "ia-camiseta-preta",
-    customImage: "/vestuario/ia/camiseta-preta/costas.png",
+    customImage: "/personalizados/ia/vestuario/camiseta-preta/costas.png",
     title: "Camiseta preta Inteligência Artificial TURMA 2026",
     description:
       "Camiseta personalizada com estampa da inteligência artificial.",
@@ -274,7 +294,7 @@ export const selectedProducts = [
     // camiseta inteligencia artificial BRANCA
     itemId: "",
     idPersonalizado: "ia-camiseta-branca",
-    customImage: "/vestuario/ia/camiseta-branca/costas.png",
+    customImage: "/personalizados/ia/vestuario/camiseta-branca/costas.png",
     title: "Camiseta branca Inteligência Artificial TURMA 2026",
     description:
       "Camiseta personalizada com estampa da inteligência artificial.",
