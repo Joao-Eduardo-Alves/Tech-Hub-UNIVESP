@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MapPin, MessageCircle, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import SectionHeader from "../components/shared/SectionHeader";
 import { drps, generalGroupLink } from "../data/drps/drps.js";
 
@@ -10,8 +11,10 @@ export default function Polos() {
   const [polos, setPolos] = useState([]);
   const [busca, setBusca] = useState("");
   const [exibindoDrp, setExibindoDrp] = useState("todos");
+  const [isSearching, setIsSearching] = useState(false);
 
   const cacheRef = useRef({});
+  const debounceTimerRef = useRef(null);
 
   const loadDRP = async (drpId) => {
     if (cacheRef.current[drpId]) return cacheRef.current[drpId];
@@ -64,13 +67,31 @@ export default function Polos() {
     return map;
   }, []);
 
-  const selectedDrp = drpMap[exibindoDrp];
+  const [filtered, setFiltered] = useState([]);
 
-  const filtered = useMemo(() => {
-    return polos.filter((polo) =>
-      polo.city.toLowerCase().includes(busca.toLowerCase()),
-    );
+  useEffect(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    setIsSearching(true);
+
+    debounceTimerRef.current = setTimeout(() => {
+      const result = polos.filter((polo) =>
+        polo.city.toLowerCase().includes(busca.toLowerCase()),
+      );
+      setFiltered(result);
+      setIsSearching(false);
+    }, 300);
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
   }, [polos, busca]);
+
+  const selectedDrp = drpMap[exibindoDrp];
 
   return (
     <div className="pt-24 pb-20">
@@ -232,58 +253,93 @@ export default function Polos() {
 
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filtered.map((polo, i) => (
-            <motion.div
-              key={`${polo.drpId}-${polo.city}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="group p-5 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-500"
-            >
-              <div className="flex items-start gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <MapPin className="w-4 h-4 text-primary" />
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-sm">{polo.city}</h3>
-                  <span className="text-xs text-muted-foreground">
-                    {drpMap[polo.drpId]?.id}
-                  </span>
-                </div>
-              </div>
-
-              {polo.wpp ? (
-                <Button
-                  asChild
-                  size="sm"
-                  variant="outline"
-                  className="rounded-xl text-xs h-8"
+          {isSearching ? (
+            <>
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="p-5 rounded-2xl bg-card border border-border/50 space-y-4"
                 >
-                  <a href={polo.wpp} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="w-3.5 h-3.5 mr-1" />
-                    WhatsApp
-                  </a>
-                </Button>
-              ) : (
-                <div className="text-xs text-muted-foreground">
-                  <p>Ainda não existe grupo para este polo 😕</p>
+                  <div className="flex items-start gap-3 mb-3">
+                    <Skeleton className="w-10 h-10 rounded-xl" />
+                    <div className="space-y-2 flex-1">
+                      <Skeleton className="w-3/4 h-4 rounded" />
+                      <Skeleton className="w-1/2 h-3 rounded" />
+                    </div>
+                  </div>
+                  <Skeleton className="w-32 h-8 rounded-xl" />
+                </div>
+              ))}
+            </>
+          ) : filtered.length === 0 ? (
+            <div className="col-span-full text-center py-12">
+              <p className="text-muted-foreground">
+                Nenhum polo encontrado para "{busca}"
+              </p>
+            </div>
+          ) : (
+            filtered.map((polo, i) => (
+              <motion.div
+                key={`${polo.drpId}-${polo.city}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.05 }}
+                className="group p-5 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-500"
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <MapPin className="w-4 h-4 text-primary" />
+                  </div>
 
-                  <Button asChild size="sm" variant="outline" className="mt-2">
+                  <div>
+                    <h3 className="font-semibold text-sm">{polo.city}</h3>
+                    <span className="text-xs text-muted-foreground">
+                      {drpMap[polo.drpId]?.id}
+                    </span>
+                  </div>
+                </div>
+
+                {polo.wpp ? (
+                  <Button
+                    asChild
+                    size="sm"
+                    variant="outline"
+                    className="rounded-xl text-xs h-8"
+                  >
                     <a
-                      href={`https://docs.google.com/forms/d/e/1FAIpQLSeEIeYDnadlpAzTP5JUYpXZnJyjPqWzx5nFP-jfG-yyd_jaOA/viewform?entry.239070013=${encodeURIComponent(
-                        polo.drpId,
-                      )}&entry.468941104=${encodeURIComponent(polo.city)}`}
+                      href={polo.wpp}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Solicitar inclusão de grupo
+                      <MessageCircle className="w-3.5 h-3.5 mr-1" />
+                      WhatsApp
                     </a>
                   </Button>
-                </div>
-              )}
-            </motion.div>
-          ))}
+                ) : (
+                  <div className="text-xs text-muted-foreground">
+                    <p>Ainda não existe grupo para este polo 😕</p>
+
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      className="mt-2"
+                    >
+                      <a
+                        href={`https://docs.google.com/forms/d/e/1FAIpQLSeEIeYDnadlpAzTP5JUYpXZnJyjPqWzx5nFP-jfG-yyd_jaOA/viewform?entry.239070013=${encodeURIComponent(
+                          polo.drpId,
+                        )}&entry.468941104=${encodeURIComponent(polo.city)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Solicitar inclusão de grupo
+                      </a>
+                    </Button>
+                  </div>
+                )}
+              </motion.div>
+            ))
+          )}
         </div>
       </div>
     </div>
