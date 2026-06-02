@@ -10,7 +10,7 @@ import Carreira from "./pages/Carreira/Carreira";
 import CarreiraRoadmaps from "./pages/Carreira/CarreiraRoadmaps";
 import CarreiraDicas from "./pages/Carreira/CarreiraDicas";
 import CarreiraFerramentas from "./pages/Carreira/CarreiraFerramentas";
-import Produtos from "./pages/Produtos";
+import Produtos from "./pages/produtos/Produtos";
 import Polos from "./pages/Polos";
 import Manual from "./pages/GuiaDoCalouro/ManualdoAluno";
 import DicaTrabalhoEstudo from "./pages/GuiaDoCalouro/DicaTrabalhoEstudo";
@@ -25,6 +25,7 @@ import Portfolio from "./pages/Carreira/CarreiraSubPages/dicas/Portfolio";
 import Linkedin from "./pages/Carreira/CarreiraSubPages/dicas/Linkedin";
 import CyberArena from "./pages/CyberArena/CyberArena";
 import CtrlShape from "./pages/CtrlShape/CtrlShape";
+import ComoComprar from "./pages/produtos/ComoComprar";
 
 const App = () => {
   return (
@@ -59,6 +60,7 @@ const App = () => {
           <Route path="/dicaTrabalhoEstudo" element={<DicaTrabalhoEstudo />} />
           <Route path="/cyber-arena" element={<CyberArena />} />
           <Route path="/ctrl-shape" element={<CtrlShape />} />
+          <Route path="/produtos/como-comprar/:tag" element={<ComoComprar />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

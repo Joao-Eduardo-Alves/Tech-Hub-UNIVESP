@@ -1,4 +1,6 @@
+import { selectedProducts } from "../src/data/produtos/produtos.js";
 import crypto from "crypto";
+import { isDeleteExpression } from "typescript";
 
 export default async function handler(req, res) {
   try {
@@ -7,37 +9,28 @@ export default async function handler(req, res) {
 
     const timestamp = Math.floor(Date.now() / 1000);
 
-    const selectedProducts = [
-      {
-        // notebook
-        itemId: 58206754488,
-        category: "geral",
-        icon: "laptop",
-        tag: "Tecnologia",
-      },
-
-      {
-        // placa mdf decorativa
-        itemId: 22799181312,
-        category: "geral",
-        icon: "coffee",
-        tag: "Decoração",
-      },
-    ];
-
     const responses = await Promise.all(
       selectedProducts.map(async (selectedProduct) => {
-        const { itemId, category, icon, tag } = selectedProduct;
+        const {
+          itemId,
+          idPersonalizado,
+          title,
+          description,
+          category,
+          icon,
+          tag,
+          customImage,
+        } = selectedProduct;
         const query = `
           query {
             productOfferV2(
               itemId: ${itemId}
             ) {
               nodes {
-                productName
                 imageUrl
                 price
                 offerLink
+                ratingStar
               }
             }
           }
@@ -76,9 +69,13 @@ export default async function handler(req, res) {
           ...product,
 
           itemId: itemId,
+          idPersonalizado: idPersonalizado,
           category: category,
           icon: icon,
           tag: tag,
+          title: title,
+          description: description,
+          customImage: customImage,
         };
       }),
     );
