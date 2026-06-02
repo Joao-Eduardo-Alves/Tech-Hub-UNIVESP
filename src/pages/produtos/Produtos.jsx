@@ -39,6 +39,8 @@ const iconMap = {
   keyboard: Keyboard,
 };
 
+const requestFormUrl = "https://forms.gle/uoFj6Wn3nWmf6bXJ9";
+
 export default function Produtos() {
   const [activeCategory, setActiveCategory] = useState("geral");
   const [activeTag, setActiveTag] = useState("all");
@@ -116,6 +118,24 @@ export default function Produtos() {
                 </button>
               ))}
             </div>
+          </div>
+        )}
+
+        {activeCategory !== "geral" && (
+          <div className="mb-10 rounded-2xl border border-primary/20 bg-primary/5 p-5 text-center">
+            <p className="text-sm text-foreground">
+              <span className="font-semibold">
+                Possui uma arte do seu curso da sua turma?
+              </span>{" "}
+              <a
+                href={requestFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-primary underline"
+              >
+                Solicite aqui a inclusão
+              </a>
+            </p>
           </div>
         )}
 
