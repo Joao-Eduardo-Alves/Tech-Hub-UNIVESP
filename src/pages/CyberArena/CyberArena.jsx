@@ -1,17 +1,13 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import IronWolves from "@/public/Iron-Wolves.png";
-import PolarVanguards from "@/public/Polar-Vanguards.png";
-import RiftRavens from "@/public/Rift-Ravens.png";
-import BlockforgeUnion from "@/public/Blockforge-Union.png";
 
 const atleticas = [
   {
     nome: "Iron Wolves",
     descricao:
       "Disciplina, foco e vitória. O clube oficial de Counter-Strike 2 da UNIVESP.",
-    brasao: IronWolves,
+    brasao: "/cyberArena/Iron-Wolves.png",
     discord: "https://discord.gg/ukRkzQ7dr2",
     glowColor: "#ef4444",
   },
@@ -19,7 +15,7 @@ const atleticas = [
     nome: "Polar Vanguards",
     descricao:
       "Precisão, frieza e vitória. Entre para a elite tática do Valorant da UNIVESP.",
-    brasao: PolarVanguards,
+    brasao: "/cyberArena/Polar-Vanguards.png",
     discord: "https://discord.gg/wp74haQC2t",
     glowColor: "#06b6d4",
   },
@@ -27,7 +23,7 @@ const atleticas = [
     nome: "Rift Ravens ",
     descricao:
       "Estratégia, caos e glória. A comunidade de League of Legends da UNIVESP.",
-    brasao: RiftRavens,
+    brasao: "/cyberArena/Rift-Ravens.png",
     discord: "https://discord.gg/UKPqZNHcZ5",
     glowColor: "#a855f7",
   },
@@ -35,7 +31,7 @@ const atleticas = [
     nome: "Blockforge Union ",
     descricao:
       "Construímos mais que mundos!. A comunidade de Minecraft da UNIVESP.",
-    brasao: BlockforgeUnion,
+    brasao: "/cyberArena/Blockforge-Union.png",
     discord: "https://discord.gg/NXxY2zFpZZ",
     glowColor: "#22c55e",
   },

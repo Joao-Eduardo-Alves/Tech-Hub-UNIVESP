@@ -4,7 +4,7 @@ import { MapPin, MessageCircle, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import SectionHeader from "../components/shared/SectionHeader";
-import { drps, generalGroupLink } from "../data/drps.js";
+import { drps, generalGroupLink } from "../data/drps/drps.js";
 
 export default function Polos() {
   const [polos, setPolos] = useState([]);
@@ -16,7 +16,7 @@ export default function Polos() {
   const loadDRP = async (drpId) => {
     if (cacheRef.current[drpId]) return cacheRef.current[drpId];
 
-    const module = await import(`../data/${drpId}.js`);
+    const module = await import(`../data/drps/${drpId}.js`);
     cacheRef.current[drpId] = module.default;
 
     return cacheRef.current[drpId];
