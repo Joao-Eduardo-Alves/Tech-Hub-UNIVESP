@@ -14,6 +14,7 @@ const navItems = [
   { label: "Carreira", path: "/carreira" },
   { label: "Cursos", path: "/cursos" },
   { label: "Guia do Vestibulando", path: "/vestibulando" },
+  { label: "Salve a UNIVESP", path: "/salve-a-univesp" },
 ];
 
 export default function Header() {
@@ -53,25 +54,25 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center transition-transform group-hover:scale-110">
+            <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center transition-transform group-hover:scale-110">
               <span className="text-primary-foreground font-heading font-bold text-sm">
                 TH
               </span>
             </div>
-            <span className="font-heading font-bold text-lg text-foreground">
+            <span className="font-heading font-bold text-base text-foreground">
               Tech Hub <span className="text-primary">UNIVESP</span>
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5 flex-nowrap overflow-x-auto">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`px-2 py-2 rounded-lg text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                   location.pathname === item.path
                     ? "text-primary bg-primary/10"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -82,7 +83,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <Button
               variant="ghost"
               size="icon"
