@@ -179,7 +179,7 @@ export default function Produtos() {
 
                 return (
                   <motion.div
-                    key={product.itemId}
+                    key={product.idPersonalizado || product.itemId}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.08 }}
@@ -218,7 +218,8 @@ export default function Produtos() {
                       <span className="font-bold">R$ {product.price}</span>
 
                       <Button asChild size="sm" variant="outline">
-                        {product.tag === "Vestuário" ? (
+                        {product.tag === "Vestuário" ||
+                        product.tag === "Itens" ? (
                           <Link
                             to={`/produtos/como-comprar/${product.tag}?modelo=${product.idPersonalizado}`}
                             state={{ offerLink: product.offerLink }}

@@ -35,6 +35,7 @@ export default function ComoComprar() {
 
   const categoria = produtosPersonalizados[tag];
   const inputModelo = searchParams.get("modelo");
+  console.log(categoria);
 
   const product = useMemo(() => {
     const baseProduct = categoria?.modelo?.[inputModelo];
@@ -79,35 +80,49 @@ export default function ComoComprar() {
           </section>
           <div className="grid gap-6">
             <div className="mt-6">
-              <div className="flex gap-6 flex-wrap">
+              {tag === "Vestuário" ? (
+                <div className="flex gap-6 flex-wrap">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Logo costas
+                    </p>
+
+                    <div className="w-[600px] h-[600px] flex items-center justify-center rounded-2xl overflow-hidden border border-border bg-card">
+                      <img
+                        src={product.previewLogoCostas}
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Logo frente
+                    </p>
+
+                    <div className="w-[600px] h-[600px] flex items-center justify-center rounded-2xl overflow-hidden border border-border bg-card">
+                      <img
+                        src={product.previewLogoFrente}
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
                 <div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Logo costas
-                  </p>
+                  <p className="text-sm text-muted-foreground mb-3">Logo</p>
 
                   <div className="w-[600px] h-[600px] flex items-center justify-center rounded-2xl overflow-hidden border border-border bg-card">
                     <img
-                      src={product.previewLogoCostas}
+                      src={product.previewLogo}
                       alt={product.name}
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
                 </div>
-
-                <div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Logo frente
-                  </p>
-
-                  <div className="w-[600px] h-[600px] flex items-center justify-center rounded-2xl overflow-hidden border border-border bg-card">
-                    <img
-                      src={product.previewLogoFrente}
-                      alt={product.name}
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
+              )}
             </div>
             {/* PASSOS */}
             {/* DOWNLOAD */}

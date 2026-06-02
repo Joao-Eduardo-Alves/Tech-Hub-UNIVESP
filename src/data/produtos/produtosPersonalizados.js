@@ -1,15 +1,18 @@
 export const produtosPersonalizados = {
   // =================================== Eng. Computação ===================================
   Vestuário: {
-    title: "Como comprar vestuário personalizado",
+    title: "Como comprar vestuário personalizados",
     description:
       "Guia prático de como baixar a arte personalizada, modificar e enviar para produção na Shopee.",
     modelo: {
       "eng-moletom-preto": {
         name: "Moletom preto engenharia da Computação",
-        modelFile: "/vestuario/eng-computacao/moletom-preto/logos.zip",
-        previewLogoCostas: "/vestuario/eng-computacao/moletom-preto/costas.png",
-        previewLogoFrente: "/vestuario/eng-computacao/moletom-preto/frente.png",
+        modelFile:
+          "/personalizados/eng-computacao/vestuario/moletom-preto/logos.zip",
+        previewLogoCostas:
+          "/personalizados/eng-computacao/vestuario/moletom-preto/costas.png",
+        previewLogoFrente:
+          "/personalizados/eng-computacao/vestuario/moletom-preto/frente.png",
       },
 
       "eng-moletom-branco": {
@@ -36,12 +39,22 @@ export const produtosPersonalizados = {
         previewLogoFrente:
           "/vestuario/eng-computacao/camiseta-branca/frente.png",
       },
-      // =================================== TI ===================================
-      "ti-moletom-preto": {
-        name: "Moletom preto Tecnologia da Informação",
-        modelFile: "/vestuario/ti/moletom-preto/logos.zip",
-        previewLogoCostas: "/vestuario/ti/moletom-preto/costas.png",
-        previewLogoFrente: "/vestuario/ti/moletom-preto/frente.png",
+      "eng-caneca": {
+        name: "Caneca engenharia da Computação",
+        modelFile: "/personalizados/eng-computacao/itens/caneca.zip",
+        previewLogo: "/personalizados/eng-computacao/itens/caneca/caneca.png",
+      },
+    },
+  },
+  Itens: {
+    title: "Como comprar itens personalizados",
+    description:
+      "Guia prático de como baixar a arte personalizada, modificar e enviar para produção na Shopee.",
+    modelo: {
+      "eng-caneca": {
+        name: "Caneca engenharia da Computação",
+        modelFile: "/personalizados/eng-computacao/itens/caneca.zip",
+        previewLogo: "/personalizados/eng-computacao/itens/caneca.png",
       },
     },
   },
