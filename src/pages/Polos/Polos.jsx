@@ -4,8 +4,8 @@ import { MapPin, MessageCircle, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import SectionHeader from "../components/shared/SectionHeader";
-import { drps, generalGroupLink } from "../data/drps/drps.js";
+import SectionHeader from "../../components/shared/SectionHeader";
+import { drps, generalGroupLink } from "../../data/drps/drps.js";
 
 export default function Polos() {
   const [polos, setPolos] = useState([]);
@@ -19,7 +19,7 @@ export default function Polos() {
   const loadDRP = async (drpId) => {
     if (cacheRef.current[drpId]) return cacheRef.current[drpId];
 
-    const module = await import(`../data/drps/${drpId}.js`);
+    const module = await import(`../../data/drps/${drpId}.js`);
     cacheRef.current[drpId] = module.default;
 
     return cacheRef.current[drpId];
@@ -77,8 +77,9 @@ export default function Polos() {
     setIsSearching(true);
 
     debounceTimerRef.current = setTimeout(() => {
+      const searchTerm = busca.trim().toLowerCase();
       const result = polos.filter((polo) =>
-        polo.city.toLowerCase().includes(busca.toLowerCase()),
+        polo.city.toLowerCase().includes(searchTerm),
       );
       setFiltered(result);
       setIsSearching(false);
@@ -102,7 +103,7 @@ export default function Polos() {
           description="Encontre seu polo por DRP, conecte-se com outros estudantes e participe de grupos de estudo no WhatsApp."
         />
 
-        {/* 🔥 GRUPO CENTRALIZADO */}
+        {/* GRUPO CENTRALIZADO */}
         <div className="mb-10 flex justify-center">
           <div className="w-full max-w-xl text-center p-6 rounded-2xl border border-border/50 bg-card shadow-lg shadow-primary/5">
             <p className="text-sm text-muted-foreground mb-3">

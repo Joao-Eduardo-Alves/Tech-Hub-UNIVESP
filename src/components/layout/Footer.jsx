@@ -2,31 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Github, Instagram, Heart, ArrowUpRight } from "lucide-react";
 
+const githubLink = "https://github.com/Joao-Eduardo-Alves/Tech-Hub-UNIVESP";
+const instagramLink = "https://www.instagram.com/techhubunivesp";
+
 const footerLinks = [
-  {
-    title: "Navegação",
-    links: [
-      { label: "Home", path: "/" },
-      { label: "Cursos", path: "/cursos" },
-      { label: "Carreira Tech", path: "/carreira" },
-      { label: "Produtos", path: "/produtos" },
-    ],
-  },
-  {
-    title: "Guias",
-    links: [
-      { label: "Vestibulando", path: "/vestibulando" },
-      { label: "Calouro", path: "/calouro" },
-      { label: "Guia de Polos", path: "/polos" },
-    ],
-  },
   {
     title: "Legal",
     links: [
-      { label: "Sobre", path: "#" },
-      { label: "Contato", path: "#" },
-      { label: "Política de Privacidade", path: "#" },
-      { label: "Termos de Uso", path: "#" },
+      { label: "Sobre", path: "/sobre" },
+      { label: "Política de Privacidade", path: "/politica-de-privacidade" },
+      { label: "Termos de Uso", path: "/termos-de-uso" },
+    ],
+  },
+  {
+    title: "Contato",
+    links: [
+      { label: "Reportar problema", path: "/report" },
+      { label: "Sugerir melhoria", path: "/sugestao" },
+      { label: "Fale comigo", path: "/contato" },
     ],
   },
 ];
@@ -48,13 +41,13 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Hub independente criado para apoiar estudantes da UNIVESP e
-              interessados em tecnologia. Conteúdo prático, dicas reais e
-              recursos úteis.
+              Hub independente criado para apoiar estudantes do eixo de
+              tecnologia da UNIVESP e interessados em tecnologia. Conteúdo
+              prático, dicas reais e recursos úteis.
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href={instagramLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -62,7 +55,7 @@ export default function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://github.com"
+                href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"

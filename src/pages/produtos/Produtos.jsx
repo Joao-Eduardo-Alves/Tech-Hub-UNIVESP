@@ -41,9 +41,16 @@ const iconMap = {
 
 const requestFormUrl = "https://forms.gle/uoFj6Wn3nWmf6bXJ9";
 
+const STORAGE_KEY_CATEGORY = "produtos-activeCategory";
+const STORAGE_KEY_TAG = "produtos-activeTag";
+
 export default function Produtos() {
-  const [activeCategory, setActiveCategory] = useState("geral");
-  const [activeTag, setActiveTag] = useState("all");
+  const [activeCategory, setActiveCategory] = useState(
+    () => sessionStorage.getItem(STORAGE_KEY_CATEGORY) || "geral",
+  );
+  const [activeTag, setActiveTag] = useState(
+    () => sessionStorage.getItem(STORAGE_KEY_TAG) || "all",
+  );
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -57,6 +64,14 @@ export default function Produtos() {
 
     loadProducts();
   }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY_CATEGORY, activeCategory);
+  }, [activeCategory]);
+
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY_TAG, activeTag);
+  }, [activeTag]);
 
   const categoryProducts = products.filter(
     (p) => p && p.category === activeCategory,

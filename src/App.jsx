@@ -3,15 +3,15 @@ import PageNotFound from "./lib/PageNotFound";
 
 import AppLayout from "./components/layout/AppLayout";
 import Home from "./pages/Home";
-import Cursos from "./pages/Cursos";
-import Vestibulando from "./pages/Vestibulando";
+import Cursos from "./pages/Cursos/Cursos";
+import Vestibulando from "./pages/Vestibulando/Vestibulando";
 import Calouro from "./pages/GuiaDoCalouro/Calouro";
 import Carreira from "./pages/Carreira/Carreira";
 import CarreiraRoadmaps from "./pages/Carreira/CarreiraRoadmaps";
 import CarreiraDicas from "./pages/Carreira/CarreiraDicas";
 import CarreiraFerramentas from "./pages/Carreira/CarreiraFerramentas";
 import Produtos from "./pages/produtos/Produtos";
-import Polos from "./pages/Polos";
+import Polos from "./pages/Polos/Polos";
 import Manual from "./pages/GuiaDoCalouro/ManualdoAluno";
 import DicaTrabalhoEstudo from "./pages/GuiaDoCalouro/DicaTrabalhoEstudo";
 import ScrollToTop from "./components/shared/ScrollToTop";
@@ -27,6 +27,12 @@ import CyberArena from "./pages/CyberArena/CyberArena";
 import CtrlShape from "./pages/CtrlShape/CtrlShape";
 import ComoComprar from "./pages/produtos/ComoComprar";
 import SaveUnivesp from "./pages/SaveUnivesp/SaveUnivesp";
+import Sobre from "./pages/Footer/Sobre";
+import PoliticaPrivacidade from "./pages/Footer/PoliticaPrivacidade";
+import TermosDeUso from "./pages/Footer/TermosDeUso";
+import Report from "./pages/Footer/Report";
+import Sugestao from "./pages/Footer/Sugestao";
+import Contato from "./pages/Footer/Contato";
 
 const App = () => {
   return (
@@ -57,12 +63,24 @@ const App = () => {
           <Route path="/carreira/dicas/linkedin" element={<Linkedin />} />
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/polos" element={<Polos />} />
-          <Route path="/manual" element={<Manual />} />
-          <Route path="/dicaTrabalhoEstudo" element={<DicaTrabalhoEstudo />} />
+          <Route path="/calouro/manual" element={<Manual />} />
+          <Route
+            path="/calouro/dicaTrabalhoEstudo"
+            element={<DicaTrabalhoEstudo />}
+          />
           <Route path="/cyber-arena" element={<CyberArena />} />
           <Route path="/ctrl-shape" element={<CtrlShape />} />
           <Route path="/salve-a-univesp" element={<SaveUnivesp />} />
           <Route path="/produtos/como-comprar/:tag" element={<ComoComprar />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route
+            path="/politica-de-privacidade"
+            element={<PoliticaPrivacidade />}
+          />
+          <Route path="/termos-de-uso" element={<TermosDeUso />} />
+          <Route path="/report" element={<Report />} />
+          <Route path="/sugestao" element={<Sugestao />} />
+          <Route path="/contato" element={<Contato />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

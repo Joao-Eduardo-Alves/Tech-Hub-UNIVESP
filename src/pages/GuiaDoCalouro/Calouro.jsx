@@ -4,6 +4,8 @@ import {
   BriefcaseBusiness,
   Phone,
   MonitorCog,
+  Gamepad2,
+  Dumbbell,
 } from "lucide-react";
 import SectionHeader from "../../components/shared/SectionHeader";
 import FeatureCard from "../../components/shared/FeatureCard";
@@ -15,7 +17,7 @@ const topics = [
     description:
       "Aprenda toda a dinâmica do ensino a distância na UNIVESP: Aulas, atividades, provas presenciais, estágio e prazos.",
     color: "cyan",
-    link: "/manual",
+    link: "/calouro/manual",
   },
   {
     icon: BriefcaseBusiness,
@@ -23,7 +25,7 @@ const topics = [
     description:
       "Dicas práticas para quem trabalha em tempo integral e precisa organizar a rotina acadêmica.",
     color: "orange",
-    link: "/dicaTrabalhoEstudo",
+    link: "/calouro/dicaTrabalhoEstudo",
   },
   {
     icon: MonitorCog,
@@ -49,7 +51,23 @@ const topics = [
     description:
       "Página com os produtos e recursos exclusivos para estudantes da UNIVESP, como planners, resumos, cursos e muito mais.",
     color: "purple",
-    link: "/polos",
+    link: "/produtos",
+  },
+  {
+    icon: Gamepad2,
+    title: "Cyber Arena",
+    description:
+      "A arena de desafios e competições de tecnologia da UNIVESP, onde os estudantes podem testar suas habilidades, aprender e se divertir com a comunidade.",
+    color: "cyan",
+    link: "/cyber-arena",
+  },
+  {
+    icon: Dumbbell,
+    title: "Ctrl + Shape",
+    description:
+      "Comunidade fitness e saúde para estudantes da UNIVESP, com dicas de exercícios, alimentação saudável e equilíbrio entre corpo e mente durante a jornada acadêmica.",
+    color: "orange",
+    link: "/ctrl-shape",
   },
 ];
 

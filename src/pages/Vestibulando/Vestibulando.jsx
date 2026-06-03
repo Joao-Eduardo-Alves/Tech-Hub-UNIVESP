@@ -7,8 +7,8 @@ import {
   Target,
   GraduationCap,
 } from "lucide-react";
-import SectionHeader from "../components/shared/SectionHeader";
-import FeatureCard from "../components/shared/FeatureCard";
+import SectionHeader from "../../components/shared/SectionHeader";
+import FeatureCard from "../../components/shared/FeatureCard";
 
 const topics = [
   {

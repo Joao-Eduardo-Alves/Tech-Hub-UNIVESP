@@ -13,7 +13,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import SectionHeader from "../components/shared/SectionHeader";
+import SectionHeader from "../../components/shared/SectionHeader";
 import { useEffect } from "react";
 
 const courses = [
