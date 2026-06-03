@@ -26,6 +26,7 @@ import Linkedin from "./pages/Carreira/CarreiraSubPages/dicas/Linkedin";
 import CyberArena from "./pages/CyberArena/CyberArena";
 import CtrlShape from "./pages/CtrlShape/CtrlShape";
 import ComoComprar from "./pages/produtos/ComoComprar";
+import SaveUnivesp from "./pages/SaveUnivesp/SaveUnivesp";
 
 const App = () => {
   return (
@@ -60,6 +61,7 @@ const App = () => {
           <Route path="/dicaTrabalhoEstudo" element={<DicaTrabalhoEstudo />} />
           <Route path="/cyber-arena" element={<CyberArena />} />
           <Route path="/ctrl-shape" element={<CtrlShape />} />
+          <Route path="/salve-a-univesp" element={<SaveUnivesp />} />
           <Route path="/produtos/como-comprar/:tag" element={<ComoComprar />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
