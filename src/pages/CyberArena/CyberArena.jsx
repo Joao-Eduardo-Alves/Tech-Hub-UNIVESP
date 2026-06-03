@@ -86,22 +86,7 @@ export default function CyberArena() {
   const discordMembers = discordWidget?.members ?? [];
 
   return (
-    <div
-      className="relative pt-24 pb-20 overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(135deg, #0a0e27 0%, #1a0e3f 25%, #0f1535 50%, #1a0e3f 75%, #0a0e27 100%)",
-        backgroundSize: "400% 400%",
-        animation: "gradientShift 15s ease infinite",
-      }}
-    >
-      <style>{`
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
+    <div className="relative pt-24 pb-20 overflow-hidden">
       <div className="mx-auto px-4 max-w-6xl">
         <SectionHeader
           badge="Escolha seu clube. Encontre seu squad. Faça parte da comunidade gamer da UNIVESP."
