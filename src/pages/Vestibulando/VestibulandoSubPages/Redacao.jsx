@@ -1,146 +1,146 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import {
-  Linkedin,
-  User,
-  FileText,
-  Network,
-  TrendingUp,
+  PenSquare,
+  BookOpen,
+  Lightbulb,
+  FileCheck,
+  Target,
   CheckCircle,
 } from "lucide-react";
 
-export default function LinkedinForBeginners() {
+export default function Redacao() {
   return (
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
-          badge="Dica de Carreira"
-          title="LinkedIn para iniciantes: como se destacar do zero"
-          description="Um guia simples e direto para criar um perfil forte no LinkedIn e começar a chamar atenção no mercado de tecnologia."
+          badge="Dica para Vestibulando"
+          title="Dicas para redação: como escrever melhor no vestibular"
+          description="Aprenda estratégias simples para desenvolver uma redação mais organizada, clara e preparada para os desafios dos vestibulares."
         />
 
         <article className="mt-12 space-y-12">
           {/* INTRO */}
           <section className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border border-border/50">
             <h2 className="text-2xl font-semibold mb-3 text-foreground">
-              O LinkedIn é mais importante do que parece
+              A redação pode fazer toda a diferença
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Para quem está começando na tecnologia, o LinkedIn não é apenas
-              uma rede social — é um portfólio vivo. Ele mostra sua evolução,
-              seus projetos e principalmente sua intenção de entrar no mercado.
+              Em muitos vestibulares, a redação possui um peso importante na
+              nota final. Uma boa escrita demonstra capacidade de argumentação,
+              organização de ideias e domínio da língua portuguesa.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Mesmo sem experiência profissional, é totalmente possível criar um
-              perfil forte e atrativo desde o início da jornada.
+              A boa notícia é que escrever bem não depende apenas de talento.
+              Com prática e método, qualquer estudante pode evoluir e ganhar
+              mais confiança na hora da prova.
             </p>
           </section>
 
-          {/* ETAPAS */}
+          {/* DICAS */}
           <div className="grid gap-6">
-            {/* PERFIL */}
+            {/* LEITURA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <User className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  1. Capriche no básico do perfil
+                  1. Leia sobre assuntos atuais
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Foto profissional, nome claro e uma headline objetiva com
-                  palavras chaves já fazem muita diferença na primeira
-                  impressão.
+                  Muitos temas de redação estão relacionados a questões sociais,
+                  tecnológicas, ambientais ou educacionais.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Evite exageros. Seja direto sobre o que você está estudando ou
-                  buscando na área de tecnologia.
+                  Manter-se informado ajuda a construir argumentos mais fortes e
+                  aumenta seu repertório para defender suas ideias.
                 </p>
               </div>
             </div>
 
-            {/* SOBRE */}
+            {/* INTERPRETAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileText className="text-primary mt-1" />
+              <Target className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  2. Escreva um “Sobre” simples e autêntico
+                  2. Entenda exatamente o tema proposto
                 </h3>
 
                 <p className="text-muted-foreground">
-                  A seção “Sobre” é onde você conta sua história de forma breve:
-                  o que você estuda, o que está aprendendo e seus objetivos.
+                  Antes de começar a escrever, leia a proposta com atenção e
+                  identifique o problema central que deve ser discutido.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Não precisa ser formal demais — clareza e sinceridade
-                  funcionam melhor do que frases complexas.
+                  Fugir do tema é um dos erros que mais prejudicam a nota dos
+                  candidatos.
                 </p>
               </div>
             </div>
 
-            {/* ATIVIDADE */}
+            {/* PLANEJAMENTO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <TrendingUp className="text-primary mt-1" />
+              <Lightbulb className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  3. Mostre evolução, mesmo sem emprego
+                  3. Faça um pequeno planejamento
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa de experiência formal para ser ativo. Posts
-                  sobre estudos, projetos e aprendizados já mostram evolução.
+                  Reserve alguns minutos para organizar suas ideias antes de
+                  escrever.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O importante é mostrar consistência e interesse pela área.
+                  Defina sua tese, os argumentos principais e a conclusão. Isso
+                  torna o texto mais coerente e fácil de desenvolver.
                 </p>
               </div>
             </div>
 
-            {/* NETWORK */}
+            {/* ESTRUTURA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <PenSquare className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  4. Construa conexões reais
+                  4. Utilize uma estrutura organizada
                 </h3>
 
                 <p className="text-muted-foreground">
-                  O LinkedIn funciona melhor quando você interage. Conectar com
-                  profissionais da área, colegas e recrutadores aumenta sua
-                  visibilidade.
+                  Uma redação bem estruturada normalmente apresenta introdução,
+                  desenvolvimento e conclusão.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Networking não é sobre quantidade, mas sobre qualidade das
-                  conexões.
+                  Essa organização facilita a leitura e ajuda a transmitir suas
+                  ideias de forma clara.
                 </p>
               </div>
             </div>
 
-            {/* CONSISTÊNCIA */}
+            {/* REVISÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Linkedin className="text-primary mt-1" />
+              <FileCheck className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  5. Consistência vale mais que perfeição
+                  5. Sempre revise seu texto
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa postar todos os dias, mas precisa manter
-                  presença. Pequenas atualizações já fazem diferença ao longo do
-                  tempo.
+                  Após terminar a redação, releia com atenção para identificar
+                  erros gramaticais, repetições e problemas de coerência.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O LinkedIn recompensa quem é constante.
+                  Pequenos ajustes podem melhorar significativamente a qualidade
+                  da sua redação.
                 </p>
               </div>
             </div>
@@ -149,17 +149,17 @@ export default function LinkedinForBeginners() {
           {/* CHECKLIST */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que não pode faltar no seu LinkedIn
+              Checklist para uma boa redação
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Foto profissional",
-                "Título claro (Ex: Desenvolvedor Fullstack)",
-                "Descrição no 'Sobre'",
-                "Projetos adicionados",
-                "Conexões na área",
-                "Atividade constante",
+                "Compreendi o tema corretamente",
+                "Defini minha tese principal",
+                "Usei argumentos consistentes",
+                "Mantive a organização do texto",
+                "Revisei ortografia e gramática",
+                "Concluí retomando a ideia principal",
               ].map((item) => (
                 <div
                   key={item}
@@ -179,9 +179,10 @@ export default function LinkedinForBeginners() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              O LinkedIn é uma das ferramentas mais poderosas para quem está
-              começando na tecnologia. Um perfil bem construído, mesmo simples,
-              já pode abrir portas para oportunidades reais.
+              Uma boa redação é resultado de preparação constante. Ler,
+              praticar, planejar e revisar são hábitos que ajudam qualquer
+              vestibulando a desenvolver textos mais claros, argumentativos e
+              alinhados com o que as bancas avaliadoras esperam.
             </p>
           </section>
         </article>

@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/shared/SectionHeader";
+import { Button } from "@/components/ui/button";
 import {
   Bug,
   Link,
@@ -165,9 +166,13 @@ export default function Report() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Caso queira relatar um problema, utilize os canais de contato
-              disponibilizados pelo projeto.
+              Caso queira relatar um problema, utilize o link abaixo.
             </p>
+            <Button asChild>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                Reportar problema
+              </a>
+            </Button>
           </section>
         </article>
       </div>

@@ -138,11 +138,11 @@ export default function CtrlShape() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Grupo de WhatsApp",
                 "Troca de experiências",
                 "Motivação diária",
-                "Hábitos saudáveis",
-                "Desafios e metas",
+                "Apoio emocional",
+                "Desafios e metas no GymRats",
+                "Dicas de treinos e alimentação",
                 "Networking entre estudantes",
               ].map((item) => (
                 <div
@@ -177,7 +177,16 @@ export default function CtrlShape() {
 
             {/* Botão opcional */}
 
-            <Button className="mt-6">Entrar no Grupo</Button>
+            <Button asChild variant="whatsapp">
+              <a
+                href="https://chat.whatsapp.com/BTmLDfTg2tQDyMaRqN4iil"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="w-3.5 h-3.5 mr-1" />
+                Entrar no Grupo
+              </a>
+            </Button>
           </section>
         </article>
       </div>

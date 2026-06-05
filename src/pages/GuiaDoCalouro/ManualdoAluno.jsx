@@ -3,7 +3,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import { Link, ExternalLink } from "lucide-react";
 
 export default function Manual() {
-  const Url = import.meta.env.VITE_MANUAL_URL || "";
+  const Url = "https://apps.univesp.br/manual-do-aluno/#inicio";
 
   return (
     <div className="pt-24 pb-20">

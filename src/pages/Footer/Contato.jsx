@@ -6,6 +6,9 @@ import {
   Code,
   Users,
   CheckCircle,
+  Linkedin,
+  Instagram,
+  Github,
 } from "lucide-react";
 
 export default function Contato() {
@@ -166,8 +169,40 @@ export default function Contato() {
 
             <p className="text-muted-foreground leading-relaxed mt-4">
               Caso deseje entrar em contato, utilize os links disponibilizados
-              no rodapé da plataforma. Ficarei feliz em conversar com você.
+              abaixo. Ficarei feliz em conversar com você.
             </p>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="https://www.linkedin.com/in/seu-perfil"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-primary/70 hover:bg-primary/5"
+              >
+                <Linkedin className="h-5 w-5 text-[#0A66C2]" />
+                LinkedIn
+              </a>
+
+              <a
+                href="https://www.instagram.com/seu-perfil"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-pink-500/70 hover:bg-pink-50"
+              >
+                <Instagram className="h-5 w-5 text-[#E4405F]" />
+                Instagram
+              </a>
+
+              <a
+                href="https://github.com/seu-usuario"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-900/70 hover:bg-slate-100"
+              >
+                <Github className="h-5 w-5 text-slate-900" />
+                GitHub
+              </a>
+            </div>
           </section>
         </article>
       </div>

@@ -34,8 +34,8 @@ export default function TermosDeUso() {
 
             <p className="text-muted-foreground leading-relaxed mt-4">
               O objetivo do Tech Hub é compartilhar informações, recursos e
-              iniciativas úteis para estudantes de tecnologia, sempre buscando
-              oferecer uma experiência positiva para toda a comunidade.
+              iniciativas úteis para estudantes de tecnologia da UNIVESP, sempre
+              buscando oferecer uma experiência positiva para toda a comunidade.
             </p>
           </section>
 
@@ -142,8 +142,8 @@ export default function TermosDeUso() {
                 "Conteúdo com finalidade informativa",
                 "Responsabilidade compartilhada",
                 "Links externos possuem regras próprias",
-                "Termos sujeitos a atualização",
                 "Projeto independente da UNIVESP",
+                "Termos sujeitos a atualização",
               ].map((item) => (
                 <div
                   key={item}

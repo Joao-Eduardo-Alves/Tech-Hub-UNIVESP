@@ -1,146 +1,146 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import {
-  Linkedin,
-  User,
-  FileText,
-  Network,
-  TrendingUp,
+  Clock,
+  MapPin,
+  ClipboardCheck,
+  Brain,
+  Heart,
   CheckCircle,
 } from "lucide-react";
 
-export default function LinkedinForBeginners() {
+export default function DiaDaProva() {
   return (
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
-          badge="Dica de Carreira"
-          title="LinkedIn para iniciantes: como se destacar do zero"
-          description="Um guia simples e direto para criar um perfil forte no LinkedIn e começar a chamar atenção no mercado de tecnologia."
+          badge="Dica para Vestibulando"
+          title="Dia da prova: como se preparar para ter um bom desempenho"
+          description="Confira orientações importantes para chegar mais tranquilo, organizado e confiante no dia do vestibular."
         />
 
         <article className="mt-12 space-y-12">
           {/* INTRO */}
           <section className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border border-border/50">
             <h2 className="text-2xl font-semibold mb-3 text-foreground">
-              O LinkedIn é mais importante do que parece
+              A preparação continua até o momento da prova
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Para quem está começando na tecnologia, o LinkedIn não é apenas
-              uma rede social — é um portfólio vivo. Ele mostra sua evolução,
-              seus projetos e principalmente sua intenção de entrar no mercado.
+              Depois de semanas ou meses de estudo, chega o momento de colocar
+              todo o conhecimento em prática. Nesse dia, organização e controle
+              emocional podem ser tão importantes quanto o conteúdo estudado.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Mesmo sem experiência profissional, é totalmente possível criar um
-              perfil forte e atrativo desde o início da jornada.
+              Pequenos cuidados ajudam a evitar imprevistos e permitem que você
+              concentre sua energia no que realmente importa: resolver a prova
+              com tranquilidade.
             </p>
           </section>
 
-          {/* ETAPAS */}
+          {/* DICAS */}
           <div className="grid gap-6">
-            {/* PERFIL */}
+            {/* HORÁRIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <User className="text-primary mt-1" />
+              <Clock className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  1. Capriche no básico do perfil
+                  1. Chegue com antecedência
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Foto profissional, nome claro e uma headline objetiva com
-                  palavras chaves já fazem muita diferença na primeira
-                  impressão.
+                  Planeje seu deslocamento e considere possíveis atrasos no
+                  trânsito ou transporte público.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Evite exageros. Seja direto sobre o que você está estudando ou
-                  buscando na área de tecnologia.
+                  Chegar cedo reduz a ansiedade e evita correr riscos
+                  desnecessários antes do início da prova.
                 </p>
               </div>
             </div>
 
-            {/* SOBRE */}
+            {/* LOCAL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileText className="text-primary mt-1" />
+              <MapPin className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  2. Escreva um “Sobre” simples e autêntico
+                  2. Confira o local e os documentos
                 </h3>
 
                 <p className="text-muted-foreground">
-                  A seção “Sobre” é onde você conta sua história de forma breve:
-                  o que você estuda, o que está aprendendo e seus objetivos.
+                  Verifique com antecedência o endereço do local de prova e os
+                  documentos exigidos pela instituição.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Não precisa ser formal demais — clareza e sinceridade
-                  funcionam melhor do que frases complexas.
+                  Deixar tudo separado no dia anterior ajuda a evitar
+                  esquecimentos e preocupações de última hora.
                 </p>
               </div>
             </div>
 
-            {/* ATIVIDADE */}
+            {/* ORGANIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <TrendingUp className="text-primary mt-1" />
+              <ClipboardCheck className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  3. Mostre evolução, mesmo sem emprego
+                  3. Organize seu tempo durante a prova
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa de experiência formal para ser ativo. Posts
-                  sobre estudos, projetos e aprendizados já mostram evolução.
+                  Leia as instruções com atenção e distribua seu tempo entre as
+                  diferentes partes da avaliação.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O importante é mostrar consistência e interesse pela área.
+                  Evite gastar tempo excessivo em uma única questão. Se
+                  necessário, avance e retorne depois.
                 </p>
               </div>
             </div>
 
-            {/* NETWORK */}
+            {/* CALMA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <Heart className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  4. Construa conexões reais
+                  4. Mantenha a calma
                 </h3>
 
                 <p className="text-muted-foreground">
-                  O LinkedIn funciona melhor quando você interage. Conectar com
-                  profissionais da área, colegas e recrutadores aumenta sua
-                  visibilidade.
+                  Sentir nervosismo é normal, mas não deixe que isso atrapalhe
+                  sua concentração.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Networking não é sobre quantidade, mas sobre qualidade das
-                  conexões.
+                  Respire fundo, leia cada questão com atenção e confie na
+                  preparação que você construiu ao longo dos estudos.
                 </p>
               </div>
             </div>
 
-            {/* CONSISTÊNCIA */}
+            {/* FOCO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Linkedin className="text-primary mt-1" />
+              <Brain className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  5. Consistência vale mais que perfeição
+                  5. Foque na prova, não nos outros candidatos
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa postar todos os dias, mas precisa manter
-                  presença. Pequenas atualizações já fazem diferença ao longo do
-                  tempo.
+                  Cada pessoa possui um ritmo diferente de resolução e
+                  estratégia de prova.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O LinkedIn recompensa quem é constante.
+                  Evite comparações durante o exame e concentre-se apenas no seu
+                  desempenho e no gerenciamento do seu tempo.
                 </p>
               </div>
             </div>
@@ -149,17 +149,17 @@ export default function LinkedinForBeginners() {
           {/* CHECKLIST */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que não pode faltar no seu LinkedIn
+              Checklist para o dia da prova
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Foto profissional",
-                "Título claro (Ex: Desenvolvedor Fullstack)",
-                "Descrição no 'Sobre'",
-                "Projetos adicionados",
-                "Conexões na área",
-                "Atividade constante",
+                "Conferir local da prova",
+                "Separar documento de identificação",
+                "Levar canetas permitidas",
+                "Sair com antecedência",
+                "Controlar o tempo durante a prova",
+                "Manter a calma e a concentração",
               ].map((item) => (
                 <div
                   key={item}
@@ -179,9 +179,10 @@ export default function LinkedinForBeginners() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              O LinkedIn é uma das ferramentas mais poderosas para quem está
-              começando na tecnologia. Um perfil bem construído, mesmo simples,
-              já pode abrir portas para oportunidades reais.
+              O dia da prova é a oportunidade de mostrar tudo o que foi
+              aprendido durante sua preparação. Com organização, atenção aos
+              detalhes e equilíbrio emocional, você aumenta suas chances de ter
+              um bom desempenho e enfrentar o vestibular com mais confiança.
             </p>
           </section>
         </article>

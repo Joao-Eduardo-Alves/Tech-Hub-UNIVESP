@@ -1,5 +1,5 @@
 const DRP01 = [
-  { city: "Arujá", wpp: "https://chat.whatsapp.com/TESTE-ARUJA" },
+  { city: "Arujá", wpp: "" },
   { city: "Barueri", wpp: "" },
   { city: "Caieiras", wpp: "" },
   { city: "Cajamar", wpp: "" },

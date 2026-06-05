@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/shared/SectionHeader";
+import { Button } from "@/components/ui/button";
 import {
   Lightbulb,
   Rocket,
@@ -6,6 +7,7 @@ import {
   BookOpen,
   Users,
   CheckCircle,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Sugestao() {
@@ -169,6 +171,12 @@ export default function Sugestao() {
               Se você tem uma sugestão, ficarei feliz em recebê-la e avaliá-la
               para futuras atualizações do projeto.
             </p>
+
+            <Button asChild>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                Enviar sugestão
+              </a>
+            </Button>
           </section>
         </article>
       </div>

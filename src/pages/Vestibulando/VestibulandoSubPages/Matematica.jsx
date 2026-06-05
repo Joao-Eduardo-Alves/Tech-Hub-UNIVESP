@@ -1,146 +1,148 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import {
-  Linkedin,
-  User,
-  FileText,
-  Network,
-  TrendingUp,
+  Calculator,
+  Brain,
+  Sigma,
+  Clock,
+  BookOpen,
   CheckCircle,
 } from "lucide-react";
 
-export default function LinkedinForBeginners() {
+export default function Matematica() {
   return (
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
-          badge="Dica de Carreira"
-          title="LinkedIn para iniciantes: como se destacar do zero"
-          description="Um guia simples e direto para criar um perfil forte no LinkedIn e começar a chamar atenção no mercado de tecnologia."
+          badge="Dica para Vestibulando"
+          title="Matemática no vestibular: como estudar de forma eficiente"
+          description="Descubra estratégias simples para melhorar seu desempenho em matemática e ganhar mais confiança na hora da prova."
         />
 
         <article className="mt-12 space-y-12">
           {/* INTRO */}
           <section className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border border-border/50">
             <h2 className="text-2xl font-semibold mb-3 text-foreground">
-              O LinkedIn é mais importante do que parece
+              Matemática é prática e constância
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Para quem está começando na tecnologia, o LinkedIn não é apenas
-              uma rede social — é um portfólio vivo. Ele mostra sua evolução,
-              seus projetos e principalmente sua intenção de entrar no mercado.
+              Muitos estudantes enxergam a matemática como uma das disciplinas
+              mais difíceis do vestibular. Porém, diferente de matérias que
+              exigem grande volume de memorização, a matemática é desenvolvida
+              principalmente por meio da prática.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Mesmo sem experiência profissional, é totalmente possível criar um
-              perfil forte e atrativo desde o início da jornada.
+              Quanto mais exercícios você resolve, maior se torna sua capacidade
+              de identificar padrões, interpretar problemas e chegar às soluções
+              com mais rapidez.
             </p>
           </section>
 
-          {/* ETAPAS */}
+          {/* DICAS */}
           <div className="grid gap-6">
-            {/* PERFIL */}
+            {/* FUNDAMENTOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <User className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  1. Capriche no básico do perfil
+                  1. Fortaleça os conceitos básicos
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Foto profissional, nome claro e uma headline objetiva com
-                  palavras chaves já fazem muita diferença na primeira
-                  impressão.
+                  Antes de avançar para conteúdos mais complexos, é importante
+                  dominar operações básicas, porcentagem, frações, razão e
+                  proporção.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Evite exageros. Seja direto sobre o que você está estudando ou
-                  buscando na área de tecnologia.
+                  Uma base sólida facilita o aprendizado dos demais assuntos e
+                  reduz erros em questões mais avançadas.
                 </p>
               </div>
             </div>
 
-            {/* SOBRE */}
+            {/* EXERCÍCIOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileText className="text-primary mt-1" />
+              <Calculator className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  2. Escreva um “Sobre” simples e autêntico
+                  2. Resolva muitos exercícios
                 </h3>
 
                 <p className="text-muted-foreground">
-                  A seção “Sobre” é onde você conta sua história de forma breve:
-                  o que você estuda, o que está aprendendo e seus objetivos.
+                  A teoria é importante, mas a evolução acontece quando você
+                  coloca o conhecimento em prática.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Não precisa ser formal demais — clareza e sinceridade
-                  funcionam melhor do que frases complexas.
+                  Resolver exercícios regularmente ajuda a identificar dúvidas,
+                  fixar fórmulas e desenvolver raciocínio lógico.
                 </p>
               </div>
             </div>
 
-            {/* ATIVIDADE */}
+            {/* ERROS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <TrendingUp className="text-primary mt-1" />
+              <Brain className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  3. Mostre evolução, mesmo sem emprego
+                  3. Aprenda com seus erros
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa de experiência formal para ser ativo. Posts
-                  sobre estudos, projetos e aprendizados já mostram evolução.
+                  Errar faz parte do processo de aprendizagem. O importante é
+                  entender por que o erro aconteceu.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O importante é mostrar consistência e interesse pela área.
+                  Revisar questões incorretas é uma das formas mais eficientes
+                  de melhorar seu desempenho.
                 </p>
               </div>
             </div>
 
-            {/* NETWORK */}
+            {/* FÓRMULAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <Sigma className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  4. Construa conexões reais
+                  4. Entenda as fórmulas, não apenas decore
                 </h3>
 
                 <p className="text-muted-foreground">
-                  O LinkedIn funciona melhor quando você interage. Conectar com
-                  profissionais da área, colegas e recrutadores aumenta sua
-                  visibilidade.
+                  Decorar fórmulas sem compreender sua aplicação pode gerar
+                  dificuldades durante a prova.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Networking não é sobre quantidade, mas sobre qualidade das
-                  conexões.
+                  Procure entender o significado de cada fórmula e em quais
+                  situações ela deve ser utilizada.
                 </p>
               </div>
             </div>
 
-            {/* CONSISTÊNCIA */}
+            {/* TEMPO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Linkedin className="text-primary mt-1" />
+              <Clock className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  5. Consistência vale mais que perfeição
+                  5. Treine a gestão do tempo
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa postar todos os dias, mas precisa manter
-                  presença. Pequenas atualizações já fazem diferença ao longo do
-                  tempo.
+                  Além de saber resolver questões, é importante conseguir fazer
+                  isso dentro do tempo disponível.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O LinkedIn recompensa quem é constante.
+                  Simulados ajudam a desenvolver velocidade e aumentam sua
+                  confiança para o dia do vestibular.
                 </p>
               </div>
             </div>
@@ -149,17 +151,17 @@ export default function LinkedinForBeginners() {
           {/* CHECKLIST */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que não pode faltar no seu LinkedIn
+              Checklist de estudos em matemática
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Foto profissional",
-                "Título claro (Ex: Desenvolvedor Fullstack)",
-                "Descrição no 'Sobre'",
-                "Projetos adicionados",
-                "Conexões na área",
-                "Atividade constante",
+                "Revisar conteúdos básicos",
+                "Resolver exercícios diariamente",
+                "Analisar questões erradas",
+                "Praticar interpretação de problemas",
+                "Revisar fórmulas importantes",
+                "Fazer simulados regularmente",
               ].map((item) => (
                 <div
                   key={item}
@@ -179,9 +181,11 @@ export default function LinkedinForBeginners() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              O LinkedIn é uma das ferramentas mais poderosas para quem está
-              começando na tecnologia. Um perfil bem construído, mesmo simples,
-              já pode abrir portas para oportunidades reais.
+              O sucesso em matemática não depende apenas de talento, mas de
+              dedicação e prática constante. Ao fortalecer sua base, resolver
+              exercícios com frequência e aprender com seus erros, você estará
+              muito mais preparado para enfrentar as questões do vestibular com
+              segurança.
             </p>
           </section>
         </article>

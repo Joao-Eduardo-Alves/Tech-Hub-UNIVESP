@@ -27,10 +27,10 @@ export default function PoliticaPrivacidade() {
 
             <p className="text-muted-foreground leading-relaxed">
               O Tech Hub foi desenvolvido com foco em fornecer conteúdos e
-              recursos úteis para estudantes de tecnologia. A privacidade dos
-              visitantes é levada a sério e, por isso, buscamos coletar apenas
-              informações estritamente necessárias para o funcionamento da
-              plataforma.
+              recursos úteis para estudantes de tecnologia da UNIVESP. A
+              privacidade dos visitantes é levada a sério e, por isso, buscamos
+              coletar apenas informações estritamente necessárias para o
+              funcionamento da plataforma.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
@@ -73,24 +73,6 @@ export default function PoliticaPrivacidade() {
                   Informações de uso podem ser utilizadas para entender o
                   desempenho do site, identificar problemas técnicos e orientar
                   futuras melhorias na experiência dos usuários.
-                </p>
-              </div>
-            </div>
-
-            {/* SEGURANÇA */}
-            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Lock className="text-primary mt-1" />
-
-              <div>
-                <h3 className="font-semibold text-lg text-foreground">
-                  Segurança das informações
-                </h3>
-
-                <p className="text-muted-foreground">
-                  São adotadas medidas razoáveis para proteger as informações
-                  utilizadas pela plataforma. Apesar disso, nenhum sistema na
-                  internet pode garantir segurança absoluta contra todos os
-                  riscos existentes.
                 </p>
               </div>
             </div>
@@ -140,11 +122,10 @@ export default function PoliticaPrivacidade() {
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 "Sem cadastro obrigatório",
-                "Sem venda de dados pessoais",
-                "Uso focado em conteúdo",
-                "Links externos possuem regras próprias",
                 "Compromisso com transparência",
+                "Uso focado em conteúdo",
                 "Privacidade como prioridade",
+                "Links externos possuem regras próprias",
               ].map((item) => (
                 <div
                   key={item}
@@ -175,7 +156,7 @@ export default function PoliticaPrivacidade() {
             <p className="text-muted-foreground leading-relaxed mt-4">
               Caso tenha dúvidas relacionadas a esta política ou queira entrar
               em contato sobre questões de privacidade, utilize os canais de
-              comunicação disponibilizados pela plataforma.
+              comunicação disponibilizados no rodapé da plataforma.
             </p>
           </section>
         </article>

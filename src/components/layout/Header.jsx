@@ -50,15 +50,16 @@ export default function Header() {
     // Verifica se a rota atual é exata ou está dentro de uma seção
     if (location.pathname === path) return true;
     // Mantém o destaque para subpages (ex: /calouro, /manual, /dicaTrabalhoEstudo)
-    if (
-      path === "/calouro" &&
-      location.pathname.startsWith("/calouro") &&
-      location.pathname !== "/calouro"
-    )
+    if (path === "/calouro" && location.pathname.startsWith("/calouro"))
       return true;
     if (path === "/carreira" && location.pathname.startsWith("/carreira"))
       return true;
     if (path === "/produtos" && location.pathname.startsWith("/produtos"))
+      return true;
+    if (
+      path === "/vestibulando" &&
+      location.pathname.startsWith("/vestibulando")
+    )
       return true;
     return false;
   };

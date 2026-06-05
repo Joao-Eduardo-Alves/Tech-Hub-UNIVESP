@@ -1,7 +1,8 @@
 import FeatureCard from "@/components/shared/FeatureCard";
 import SectionHeader from "../../components/shared/SectionHeader";
 import { careerTopics } from "./Carreira";
-import { CheckCircle2, Link } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function CarreiraFerramentas() {
