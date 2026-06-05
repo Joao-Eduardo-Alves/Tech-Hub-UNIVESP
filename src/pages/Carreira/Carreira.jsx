@@ -6,33 +6,30 @@ import {
   Linkedin,
   Layout,
   Server,
-  BarChart3,
-  ArrowRight,
-  CheckCircle2,
-  Link,
-  User,
-  UserCheck,
-  ShoppingBag,
   Kanban,
   FileQuestion,
   Wrench,
   Cpu,
   Brain,
   Database,
+  Terminal,
+  Bot,
+  Router,
+  SquareDashedBottomCode,
 } from "lucide-react";
 import SectionHeader from "../../components/shared/SectionHeader";
 import FeatureCard from "@/components/shared/FeatureCard";
 
 export const careerTopics = [
   {
-    link: "/carreira/dicas/estagio",
+    link: "/carreira/dicas/vaga",
     type: "dica",
     icon: Briefcase,
-    title: "Como Conseguir Estágio sem Experiência",
+    title: "Como Conseguir sua primeira vaga sem Experiência",
     description:
       "Estratégias práticas para conseguir sua primeira oportunidade na área tech, mesmo sem experiência prévia.",
     steps: [
-      "Comece a buscar desde o início do curso",
+      "Aproveite o estágio e comece a buscar desde o início do curso",
       "Monte um portfólio com projetos pessoais",
       "Contribua em projetos open source",
       "Participe de hackathons, bootcamps e eventos",
@@ -152,6 +149,56 @@ export const careerTopics = [
     ],
     color: "bg-orange-500/10 text-orange-500",
   },
+  {
+    link: "/carreira/ferramentas/IDEs",
+    type: "ferramenta",
+    icon: Terminal,
+    title: "IDEs e Editores de Código",
+    description:
+      "Explore as melhores IDEs e editores de código para programadores, desde usos gerais até especializações em linguagens específicas.",
+    steps: ["VS Code", "Intellij", "JetBrains"],
+    color: "bg-violet-500/10 text-violet-500",
+  },
+  {
+    link: "/carreira/ferramentas/designUx",
+    type: "ferramenta",
+    icon: Layout,
+    title: "Ferramentas de Design e UI/UX",
+    description:
+      "Explore as melhores ferramentas de design e experiência do usuário para programadores, desde esboços rápidos até protótipos avançados.",
+    steps: ["Figma", "Excalidraw", "Coolors"],
+    color: "bg-emerald-500/10 text-emerald-500",
+  },
+  {
+    link: "/carreira/ferramentas/automacao",
+    type: "ferramenta",
+    icon: Bot,
+    title: "Ferramentas de Automação",
+    description:
+      "Descubra ferramentas de IA e automação que podem acelerar seus estudos, aumentar sua produtividade e ajudar na criação de projetos.",
+    steps: ["ChatGPT", "Base44", "NotebookLM"],
+    color: "bg-orange-500/10 text-orange-500",
+  },
+  {
+    link: "/carreira/ferramentas/deployfree",
+    type: "ferramenta",
+    icon: Router,
+    title: "Ferramentas de Deploy para Projetos e Portfólio",
+    description:
+      "Conheça plataformas que permitem publicar seus projetos gratuitamente e criar um portfólio acessível para recrutadores, professores e futuros clientes.",
+    steps: ["Vercel", "Railway", "GitHub Pages"],
+    color: "bg-blue-500/10 text-blue-500",
+  },
+  {
+    link: "/carreira/ferramentas/testeapis",
+    type: "ferramenta",
+    icon: SquareDashedBottomCode,
+    title: "Ferramentas para Teste de APIs",
+    description:
+      "Conheça plataformas que permitem testar e documentar suas APIs de forma simples e eficiente, facilitando o desenvolvimento e a colaboração em projetos.",
+    steps: ["Postman", "Insomnia", "Swagger"],
+    color: "bg-cyan-500/10 text-cyan-500",
+  },
 ];
 
 const guides = [
@@ -159,7 +206,7 @@ const guides = [
     icon: Kanban,
     title: "Roadmaps",
     description:
-      "Mapeie sua evolução na tecnologia com trilhas organizadas do básico ao avançado. Descubra o que estudar, em qual ordem aprender e quais habilidades realmente fazem diferença no mercado.",
+      "Mapeie sua evolução na tecnologia com trilhas organizadas, descubra o que estudar e quais habilidades realmente fazem diferença no mercado.",
     color: "blue",
     link: "/carreira/roadmaps",
   },
@@ -167,7 +214,7 @@ const guides = [
     icon: FileQuestion,
     title: "Dicas práticas",
     description:
-      "Atalhos inteligentes para estudar melhor, programar com mais eficiência e evitar erros comuns na jornada tech. Pequenas dicas que podem acelerar muito seu crescimento na área.",
+      "Dicas práticas e diretas para quem está começando na tecnologia: Como conseguir a primeira vaga, montar um portfólio que impressiona e otimizar seu LinkedIn para chamar atenção dos recrutadores.",
     color: "orange",
     link: "/carreira/dicas",
   },
@@ -175,7 +222,7 @@ const guides = [
     icon: Wrench,
     title: "Ferramentas",
     description:
-      "Explore plataformas, extensões, sites e recursos que facilitam a vida de quem estuda e trabalha com tecnologia. Tudo reunido para aumentar sua produtividade e turbinar seus projetos..",
+      "Explore plataformas, extensões, sites e recursos que facilitam a vida de quem estuda e trabalha com tecnologia. Tudo reunido para aumentar sua produtividade e turbinar seus projetos.",
     color: "blue",
     link: "/carreira/ferramentas",
   },

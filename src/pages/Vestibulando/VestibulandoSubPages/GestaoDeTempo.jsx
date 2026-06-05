@@ -1,166 +1,164 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import {
+  Clock,
+  Calendar,
   Target,
-  Briefcase,
   BookOpen,
-  Network,
-  Rocket,
+  CheckSquare,
   CheckCircle,
 } from "lucide-react";
 
-export default function StageTips() {
+export default function GestaoDeTempo() {
   return (
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
-          badge="Dica de Carreira"
-          title="Como conseguir estágio sem experiência"
-          description="Um guia direto e realista para entrar no mercado tech mesmo sem nunca ter trabalhado na área."
+          badge="Dica para Vestibulando"
+          title="Gestão de tempo: como organizar seus estudos para o vestibular"
+          description="Aprenda estratégias simples para aproveitar melhor seu tempo, manter a consistência nos estudos e chegar mais preparado para a prova."
         />
 
         <article className="mt-12 space-y-12">
           {/* INTRO */}
           <section className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border border-border/50">
             <h2 className="text-2xl font-semibold mb-3 text-foreground">
-              Sim, dá para conseguir estágio começando do zero
+              Estudar mais nem sempre significa estudar melhor
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              A maior dúvida de quem está entrando na tecnologia é a clássica:
-              “como vou conseguir estágio se ninguém me contrata sem
-              experiência?”. A verdade é que estágio existe justamente para isso
-              — formar profissionais.
+              Muitos vestibulandos acreditam que precisam passar horas seguidas
+              estudando para obter bons resultados. Na prática, a organização e
+              a qualidade do estudo costumam ter um impacto ainda maior.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              O segredo não é ter experiência profissional, e sim demonstrar
-              potencial, consistência e vontade de aprender.
+              Uma boa gestão de tempo ajuda a manter a disciplina, evitar a
+              procrastinação e criar uma rotina sustentável até o dia da prova.
             </p>
           </section>
 
-          {/* ETAPAS */}
+          {/* DICAS */}
           <div className="grid gap-6">
-            {/* BASE */}
+            {/* PLANEJAMENTO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <Calendar className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  1. Construa uma base mínima de conhecimento
+                  1. Monte um cronograma realista
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Antes de aplicar, tenha noções básicas da sua área (frontend,
-                  backend, dados etc.). Não precisa ser avançado — mas precisa
-                  saber o essencial.
+                  Organize os horários de estudo de acordo com sua rotina e sua
+                  disponibilidade diária.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Empresas querem alguém que já tenha dado os primeiros passos e
-                  consiga evoluir rápido.
+                  Evite criar metas impossíveis de cumprir. Um planejamento
+                  realista aumenta as chances de manter a constância ao longo do
+                  tempo.
                 </p>
               </div>
             </div>
 
-            {/* PORTFÓLIO */}
-            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Briefcase className="text-primary mt-1" />
-
-              <div>
-                <h3 className="font-semibold text-lg text-foreground">
-                  2. Crie projetos simples (mas reais)
-                </h3>
-
-                <p className="text-muted-foreground">
-                  Um portfólio vale mais do que qualquer currículo vazio.
-                  Projetos simples como landing pages, APIs ou dashboards já
-                  mostram sua capacidade.
-                </p>
-
-                <p className="text-muted-foreground mt-3">
-                  O importante não é a complexidade, mas sim mostrar que você
-                  sabe construir algo do início ao fim.
-                </p>
-              </div>
-            </div>
-
-            {/* NETWORK */}
-            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
-
-              <div>
-                <h3 className="font-semibold text-lg text-foreground">
-                  3. Networking abre mais portas do que currículo
-                </h3>
-
-                <p className="text-muted-foreground">
-                  Muitas vagas nunca são publicadas. Elas são preenchidas por
-                  indicação ou contato direto com pessoas da área.
-                </p>
-
-                <p className="text-muted-foreground mt-3">
-                  Participar de comunidades, eventos e grupos pode acelerar
-                  muito sua entrada no mercado.
-                </p>
-              </div>
-            </div>
-
-            {/* INSCRIÇÕES */}
+            {/* PRIORIDADES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
               <Target className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  4. Aplique mesmo sem se sentir pronto
+                  2. Priorize as matérias com mais dificuldade
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Esperar “estar pronto” é um dos maiores erros. Você aprende no
-                  processo de seleção, entrevistas e testes técnicos.
+                  É natural dedicar mais atenção aos conteúdos que apresentam
+                  maior desafio.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Cada candidatura é um treino que te aproxima da vaga ideal.
+                  Identifique seus pontos fracos e distribua mais tempo para
+                  essas disciplinas sem abandonar as demais.
                 </p>
               </div>
             </div>
 
-            {/* CONSTÂNCIA */}
+            {/* BLOCOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Clock className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  5. Consistência vale mais do que velocidade
+                  3. Estude em blocos de tempo
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Entrar na área não acontece da noite para o dia. O diferencial
-                  é continuar evoluindo mesmo sem resultados imediatos.
+                  Dividir os estudos em períodos menores pode ajudar na
+                  concentração e reduzir o cansaço mental.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Pequenos avanços diários constroem grandes oportunidades ao
-                  longo do tempo.
+                  Faça pequenas pausas entre os blocos para descansar e manter a
+                  produtividade durante o dia.
+                </p>
+              </div>
+            </div>
+
+            {/* REVISÃO */}
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
+              <BookOpen className="text-primary mt-1" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  4. Reserve tempo para revisões
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Revisar conteúdos regularmente ajuda a fortalecer a memória e
+                  evitar que o conhecimento seja esquecido.
+                </p>
+
+                <p className="text-muted-foreground mt-3">
+                  Não deixe toda a revisão para os dias próximos ao vestibular.
+                </p>
+              </div>
+            </div>
+
+            {/* ACOMPANHAMENTO */}
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
+              <CheckSquare className="text-primary mt-1" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  5. Acompanhe seu progresso
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Registrar o que foi estudado ajuda a visualizar sua evolução e
+                  identificar conteúdos que ainda precisam de atenção.
+                </p>
+
+                <p className="text-muted-foreground mt-3">
+                  Pequenos avanços diários geram grandes resultados ao longo dos
+                  meses de preparação.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* DICAS EXTRAS */}
+          {/* CHECKLIST */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que mais aumenta suas chances
+              Checklist para organizar seus estudos
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "GitHub organizado",
-                "LinkedIn ativo",
-                "Projetos publicados",
-                "Participação em comunidades",
-                "Currículo simples e direto",
-                "Boa comunicação",
+                "Criar um cronograma semanal",
+                "Definir metas de estudo",
+                "Priorizar disciplinas difíceis",
+                "Fazer pausas durante os estudos",
+                "Separar tempo para revisão",
+                "Monitorar o próprio progresso",
               ].map((item) => (
                 <div
                   key={item}
@@ -180,9 +178,10 @@ export default function StageTips() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Conseguir um estágio sem experiência não é sobre sorte — é sobre
-              estratégia. Quem constrói base, cria projetos e se coloca em
-              movimento inevitavelmente se destaca ao longo do tempo.
+              Uma boa gestão de tempo permite estudar com mais eficiência e
+              reduzir a sensação de sobrecarga. Com planejamento, disciplina e
+              revisões constantes, você consegue aproveitar melhor cada hora de
+              estudo e aumentar sua preparação para o vestibular.
             </p>
           </section>
         </article>

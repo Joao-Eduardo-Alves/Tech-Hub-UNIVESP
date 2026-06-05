@@ -46,6 +46,24 @@ export default function Header() {
     localStorage.setItem("theme", !isDark ? "dark" : "light");
   };
 
+  const isActiveRoute = (path) => {
+    // Verifica se a rota atual é exata ou está dentro de uma seção
+    if (location.pathname === path) return true;
+    // Mantém o destaque para subpages (ex: /calouro, /manual, /dicaTrabalhoEstudo)
+    if (path === "/calouro" && location.pathname.startsWith("/calouro"))
+      return true;
+    if (path === "/carreira" && location.pathname.startsWith("/carreira"))
+      return true;
+    if (path === "/produtos" && location.pathname.startsWith("/produtos"))
+      return true;
+    if (
+      path === "/vestibulando" &&
+      location.pathname.startsWith("/vestibulando")
+    )
+      return true;
+    return false;
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -68,19 +86,24 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-0.5 flex-nowrap overflow-x-auto">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`px-2 py-2 rounded-lg text-sm font-medium transition-all duration-300 whitespace-nowrap ${
-                  location.pathname === item.path
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isCampaign = item.path === "/salve-a-univesp";
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`px-2 py-2 rounded-lg text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                    isActiveRoute(item.path)
+                      ? "text-primary bg-primary/10"
+                      : isCampaign
+                        ? "text-red-500 bg-red-500/10 hover:bg-red-500/15"
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="flex items-center gap-1">
@@ -121,20 +144,25 @@ export default function Header() {
             className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden"
           >
             <nav className="px-4 py-4 space-y-1">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                    location.pathname === item.path
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const isCampaign = item.path === "/salve-a-univesp";
+                return (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+                      isActiveRoute(item.path)
+                        ? "text-primary bg-primary/10"
+                        : isCampaign
+                          ? "text-red-500 bg-red-500/10 hover:bg-red-500/15"
+                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </nav>
           </motion.div>
         )}

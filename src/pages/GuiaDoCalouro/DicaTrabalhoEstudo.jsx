@@ -18,7 +18,7 @@ export default function DicaTrabalhoEstudo() {
               A realidade de muitos alunos
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Muitos estudantes da Univesp trabalham durante o dia e precisam
+              Muitos estudantes da UNIVESP trabalham durante o dia e precisam
               encaixar os estudos na rotina. A boa notícia é que não é
               necessário estudar horas seguidas para evoluir. Organização e
               constância valem mais do que intensidade ocasional.

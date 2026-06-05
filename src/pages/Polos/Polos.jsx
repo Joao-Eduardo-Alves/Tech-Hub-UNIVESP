@@ -4,8 +4,8 @@ import { MapPin, MessageCircle, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import SectionHeader from "../components/shared/SectionHeader";
-import { drps, generalGroupLink } from "../data/drps/drps.js";
+import SectionHeader from "../../components/shared/SectionHeader";
+import { drps, generalGroupLink } from "../../data/drps/drps.js";
 
 export default function Polos() {
   const [polos, setPolos] = useState([]);
@@ -19,7 +19,7 @@ export default function Polos() {
   const loadDRP = async (drpId) => {
     if (cacheRef.current[drpId]) return cacheRef.current[drpId];
 
-    const module = await import(`../data/drps/${drpId}.js`);
+    const module = await import(`../../data/drps/${drpId}.js`);
     cacheRef.current[drpId] = module.default;
 
     return cacheRef.current[drpId];
@@ -77,8 +77,9 @@ export default function Polos() {
     setIsSearching(true);
 
     debounceTimerRef.current = setTimeout(() => {
+      const searchTerm = busca.trim().toLowerCase();
       const result = polos.filter((polo) =>
-        polo.city.toLowerCase().includes(busca.toLowerCase()),
+        polo.city.toLowerCase().includes(searchTerm),
       );
       setFiltered(result);
       setIsSearching(false);
@@ -91,6 +92,14 @@ export default function Polos() {
     };
   }, [polos, busca]);
 
+  const displayPolos = [...filtered].sort((a, b) => {
+    const aHasGroup = Boolean(a.wpp);
+    const bHasGroup = Boolean(b.wpp);
+
+    if (aHasGroup === bHasGroup) return 0;
+    return aHasGroup ? -1 : 1;
+  });
+
   const selectedDrp = drpMap[exibindoDrp];
 
   return (
@@ -102,7 +111,7 @@ export default function Polos() {
           description="Encontre seu polo por DRP, conecte-se com outros estudantes e participe de grupos de estudo no WhatsApp."
         />
 
-        {/* 🔥 GRUPO CENTRALIZADO */}
+        {/* GRUPO CENTRALIZADO */}
         <div className="mb-10 flex justify-center">
           <div className="w-full max-w-xl text-center p-6 rounded-2xl border border-border/50 bg-card shadow-lg shadow-primary/5">
             <p className="text-sm text-muted-foreground mb-3">
@@ -114,48 +123,27 @@ export default function Polos() {
             <h2 className="text-lg font-semibold mb-4 text-foreground">
               {exibindoDrp === "todos"
                 ? "Conecte-se com toda a comunidade UNIVESP"
-                : `Conecte-se com o DRP ${selectedDrp?.id}`}
+                : `Conecte-se com o ${selectedDrp?.id}`}
             </h2>
 
-            <Button
-              asChild
-              variant="outline"
-              size="sm"
-              className="rounded-xl px-5"
-            >
-              {exibindoDrp === "todos" ? (
-                generalGroupLink ? (
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="rounded-xl px-5"
+            {exibindoDrp === "todos" ? (
+              generalGroupLink ? (
+                <Button
+                  asChild
+                  variant="whatsapp"
+                  size="sm"
+                  className="rounded-xl h-10 px-8"
+                >
+                  <a
+                    href={generalGroupLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <a
-                      href={generalGroupLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Entrar no grupo geral
-                    </a>
-                  </Button>
-                ) : (
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="rounded-xl px-5"
-                  >
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLScWCHR_vDhnxym--OyRa3mn7rCljOucrLdgqKUpYJPZiGM5HQ/viewform"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Solicitar criação do grupo geral
-                    </a>
-                  </Button>
-                )
-              ) : selectedDrp?.wpp ? (
+                    <MessageCircle className="w-3.5 h-3.5 mr-1" />
+                    Entrar no grupo geral
+                  </a>
+                </Button>
+              ) : (
                 <Button
                   asChild
                   variant="outline"
@@ -163,37 +151,53 @@ export default function Polos() {
                   className="rounded-xl px-5"
                 >
                   <a
-                    href={selectedDrp.wpp}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScWCHR_vDhnxym--OyRa3mn7rCljOucrLdgqKUpYJPZiGM5HQ/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Entrar no grupo do DRP
+                    Solicitar criação do grupo geral
                   </a>
                 </Button>
-              ) : (
-                <>
-                  <p className="text-sm text-gray-600 text-center">
-                    Ainda não existe grupo para este DRP 😕.
-                  </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="rounded-xl px-5"
+              )
+            ) : selectedDrp?.wpp ? (
+              <Button
+                asChild
+                variant="whatsapp"
+                size="sm"
+                className="rounded-xl h-10 px-8"
+              >
+                <a
+                  href={selectedDrp.wpp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 mr-1" />
+                  Entrar no grupo do DRP
+                </a>
+              </Button>
+            ) : (
+              <>
+                <p className="text-sm text-gray-600 text-center">
+                  Ainda não existe grupo para este DRP 😕.
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="rounded-xl px-5"
+                >
+                  <a
+                    href={`https://docs.google.com/forms/d/e/1FAIpQLScWCHR_vDhnxym--OyRa3mn7rCljOucrLdgqKUpYJPZiGM5HQ/viewform?usp=pp_url&entry.1017508856=${
+                      selectedDrp?.id || "DRP01"
+                    }&entry.1752308132=teste`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <a
-                      href={`https://docs.google.com/forms/d/e/1FAIpQLScWCHR_vDhnxym--OyRa3mn7rCljOucrLdgqKUpYJPZiGM5HQ/viewform?usp=pp_url&entry.1017508856=${
-                        selectedDrp?.id || "DRP01"
-                      }&entry.1752308132=teste`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Solicitar inclusão do grupo do DRP
-                    </a>
-                  </Button>
-                </>
-              )}
-            </Button>
+                    Solicitar inclusão do grupo do DRP
+                  </a>
+                </Button>
+              </>
+            )}
           </div>
         </div>
 
@@ -278,7 +282,7 @@ export default function Polos() {
               </p>
             </div>
           ) : (
-            filtered.map((polo, i) => (
+            displayPolos.map((polo, i) => (
               <motion.div
                 key={`${polo.drpId}-${polo.city}`}
                 initial={{ opacity: 0, y: 20 }}
@@ -303,7 +307,7 @@ export default function Polos() {
                   <Button
                     asChild
                     size="sm"
-                    variant="outline"
+                    variant="whatsapp"
                     className="rounded-xl text-xs h-8"
                   >
                     <a

@@ -19,6 +19,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        whatsapp:
+          "bg-[#25D366] text-white shadow-sm hover:bg-[#1ebe5d] transition-colors",
       },
       size: {
         default: "h-9 px-4 py-2",
@@ -37,7 +39,7 @@ const buttonVariants = cva(
 /**
  * @typedef {React.ComponentPropsWithoutRef<"button"> & {
  *   className?: string;
- *   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
+ *   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | "whatsapp";
  *   size?: "default" | "sm" | "lg" | "icon";
  *   asChild?: boolean;
  * }} ButtonProps

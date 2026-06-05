@@ -1,11 +1,15 @@
 export const drps = [
-  { id: "DRP01", name: "DRP 01", wpp: "https://chat.whatsapp.com/TESTE-DRP01" },
+  { id: "DRP01", name: "DRP 01", wpp: "" },
   { id: "DRP02", name: "DRP 02", wpp: "" },
   { id: "DRP03", name: "DRP 03", wpp: "" },
   { id: "DRP04", name: "DRP 04", wpp: "" },
   { id: "DRP05", name: "DRP 05", wpp: "" },
   { id: "DRP06", name: "DRP 06", wpp: "" },
-  { id: "DRP07", name: "DRP 07", wpp: "" },
+  {
+    id: "DRP07",
+    name: "DRP 07",
+    wpp: "https://chat.whatsapp.com/DCadX9PGKUuEIa4YSbnNFI?s=sw&p=a&mlu=0",
+  },
   { id: "DRP08", name: "DRP 08", wpp: "" },
   { id: "DRP09", name: "DRP 09", wpp: "" },
   { id: "DRP10", name: "DRP 10", wpp: "" },
@@ -15,4 +19,5 @@ export const drps = [
   { id: "DRP14", name: "DRP 14", wpp: "" },
 ];
 
-export const generalGroupLink = "https://chat.whatsapp.com/LINK";
+export const generalGroupLink =
+  "https://chat.whatsapp.com/KQyIBgHNhB1D1dVxzR2Lrx?s=sw&p=a&mlu=0";

@@ -19,7 +19,10 @@ const DRP07 = [
   { city: "Vera Cruz", wpp: "" },
   { city: "Alvinlândia", wpp: "" },
   { city: "Bastos", wpp: "" },
-  { city: "Maracaí", wpp: "" },
+  {
+    city: "Maracaí",
+    wpp: "https://chat.whatsapp.com/KnSHcwALuJm9TWwpPWcRDP?s=sw&p=a&mlu=0",
+  },
   { city: "Pompéia", wpp: "" },
   { city: "Quintana", wpp: "" },
   { city: "Rinópolis", wpp: "" },

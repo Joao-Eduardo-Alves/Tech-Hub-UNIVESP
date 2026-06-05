@@ -7,8 +7,8 @@ import {
   Target,
   GraduationCap,
 } from "lucide-react";
-import SectionHeader from "../components/shared/SectionHeader";
-import FeatureCard from "../components/shared/FeatureCard";
+import SectionHeader from "../../components/shared/SectionHeader";
+import FeatureCard from "../../components/shared/FeatureCard";
 
 const topics = [
   {
@@ -25,7 +25,7 @@ const topics = [
     description:
       "Dicas de estruturação, temas recorrentes e como construir uma argumentação sólida na redação.",
     color: "blue",
-    link: "/redacao",
+    link: "/vestibulando/redacao",
   },
   {
     icon: Calculator,
@@ -33,7 +33,7 @@ const topics = [
     description:
       "Os principais tópicos de matemática cobrados, exercícios resolvidos e macetes para otimizar tempo.",
     color: "green",
-    link: "/matematica",
+    link: "/vestibulando/matematica",
   },
   {
     icon: Clock,
@@ -41,7 +41,7 @@ const topics = [
     description:
       "Como distribuir seu tempo durante a prova, priorizar questões e manter o foco até o final.",
     color: "purple",
-    link: "/gestao-tempo",
+    link: "/vestibulando/gestaoDeTempo",
   },
   {
     icon: CalendarCheck,
@@ -49,7 +49,7 @@ const topics = [
     description:
       "Documentos necessários, horários, dicas de alimentação, transporte e preparação mental para o dia D.",
     color: "orange",
-    link: "/dia-da-prova",
+    link: "/vestibulando/diaDaProva",
   },
   {
     icon: BookOpen,
@@ -57,7 +57,7 @@ const topics = [
     description:
       "Recomendações de livros, videoaulas, apostilas e recursos gratuitos para sua preparação.",
     color: "cyan",
-    link: "/material-de-estudo",
+    link: "/vestibulando/materialEstudo",
   },
 ];
 

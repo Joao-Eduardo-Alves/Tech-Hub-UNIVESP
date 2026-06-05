@@ -1,146 +1,147 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import {
-  Linkedin,
-  User,
+  BookOpen,
+  Laptop,
   FileText,
-  Network,
-  TrendingUp,
+  Library,
+  Search,
   CheckCircle,
 } from "lucide-react";
 
-export default function LinkedinForBeginners() {
+export default function StudyMaterialsTips() {
   return (
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
-          badge="Dica de Carreira"
-          title="LinkedIn para iniciantes: como se destacar do zero"
-          description="Um guia simples e direto para criar um perfil forte no LinkedIn e começar a chamar atenção no mercado de tecnologia."
+          badge="Dica para Vestibulando"
+          title="Materiais de estudo: como escolher os recursos certos para o vestibular"
+          description="Conheça estratégias para selecionar materiais de qualidade e tornar seus estudos mais eficientes e organizados."
         />
 
         <article className="mt-12 space-y-12">
           {/* INTRO */}
           <section className="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-2xl border border-border/50">
             <h2 className="text-2xl font-semibold mb-3 text-foreground">
-              O LinkedIn é mais importante do que parece
+              Nem sempre mais material significa mais aprendizado
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Para quem está começando na tecnologia, o LinkedIn não é apenas
-              uma rede social — é um portfólio vivo. Ele mostra sua evolução,
-              seus projetos e principalmente sua intenção de entrar no mercado.
+              Um dos erros mais comuns entre vestibulandos é acumular apostilas,
+              livros, vídeos e resumos sem conseguir utilizar tudo de forma
+              eficiente.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Mesmo sem experiência profissional, é totalmente possível criar um
-              perfil forte e atrativo desde o início da jornada.
+              Escolher bons materiais e manter uma rotina organizada costuma ser
+              muito mais produtivo do que tentar estudar por dezenas de fontes
+              diferentes ao mesmo tempo.
             </p>
           </section>
 
-          {/* ETAPAS */}
+          {/* DICAS */}
           <div className="grid gap-6">
-            {/* PERFIL */}
+            {/* QUALIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <User className="text-primary mt-1" />
+              <Search className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  1. Capriche no básico do perfil
+                  1. Priorize materiais confiáveis
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Foto profissional, nome claro e uma headline objetiva com
-                  palavras chaves já fazem muita diferença na primeira
-                  impressão.
+                  Escolha conteúdos produzidos por instituições reconhecidas,
+                  professores especializados e plataformas educacionais de
+                  qualidade.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Evite exageros. Seja direto sobre o que você está estudando ou
-                  buscando na área de tecnologia.
+                  Materiais confiáveis ajudam a evitar informações incorretas e
+                  tornam o aprendizado mais seguro.
                 </p>
               </div>
             </div>
 
-            {/* SOBRE */}
+            {/* LIVROS */}
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
+              <BookOpen className="text-primary mt-1" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  2. Utilize livros e apostilas como base
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Livros didáticos e apostilas costumam apresentar os conteúdos
+                  de forma organizada e progressiva.
+                </p>
+
+                <p className="text-muted-foreground mt-3">
+                  Eles podem servir como referência principal para seus estudos,
+                  especialmente nos temas mais cobrados em vestibulares.
+                </p>
+              </div>
+            </div>
+
+            {/* DIGITAL */}
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
+              <Laptop className="text-primary mt-1" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  3. Aproveite recursos digitais
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Videoaulas, simulados online e plataformas educacionais podem
+                  complementar seus estudos de forma prática e dinâmica.
+                </p>
+
+                <p className="text-muted-foreground mt-3">
+                  Utilize esses recursos para reforçar conteúdos que exigem mais
+                  atenção ou aprofundamento.
+                </p>
+              </div>
+            </div>
+
+            {/* RESUMOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
               <FileText className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  2. Escreva um “Sobre” simples e autêntico
+                  4. Produza seus próprios resumos
                 </h3>
 
                 <p className="text-muted-foreground">
-                  A seção “Sobre” é onde você conta sua história de forma breve:
-                  o que você estuda, o que está aprendendo e seus objetivos.
+                  Escrever resumos ajuda a organizar informações importantes e
+                  reforça a aprendizagem.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  Não precisa ser formal demais — clareza e sinceridade
-                  funcionam melhor do que frases complexas.
+                  Além disso, eles se tornam excelentes materiais de revisão nas
+                  semanas que antecedem a prova.
                 </p>
               </div>
             </div>
 
-            {/* ATIVIDADE */}
+            {/* ORGANIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <TrendingUp className="text-primary mt-1" />
+              <Library className="text-primary mt-1" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  3. Mostre evolução, mesmo sem emprego
+                  5. Organize seus materiais
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Você não precisa de experiência formal para ser ativo. Posts
-                  sobre estudos, projetos e aprendizados já mostram evolução.
+                  Manter livros, anotações e arquivos digitais organizados
+                  facilita a rotina de estudos.
                 </p>
 
                 <p className="text-muted-foreground mt-3">
-                  O importante é mostrar consistência e interesse pela área.
-                </p>
-              </div>
-            </div>
-
-            {/* NETWORK */}
-            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
-
-              <div>
-                <h3 className="font-semibold text-lg text-foreground">
-                  4. Construa conexões reais
-                </h3>
-
-                <p className="text-muted-foreground">
-                  O LinkedIn funciona melhor quando você interage. Conectar com
-                  profissionais da área, colegas e recrutadores aumenta sua
-                  visibilidade.
-                </p>
-
-                <p className="text-muted-foreground mt-3">
-                  Networking não é sobre quantidade, mas sobre qualidade das
-                  conexões.
-                </p>
-              </div>
-            </div>
-
-            {/* CONSISTÊNCIA */}
-            <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Linkedin className="text-primary mt-1" />
-
-              <div>
-                <h3 className="font-semibold text-lg text-foreground">
-                  5. Consistência vale mais que perfeição
-                </h3>
-
-                <p className="text-muted-foreground">
-                  Você não precisa postar todos os dias, mas precisa manter
-                  presença. Pequenas atualizações já fazem diferença ao longo do
-                  tempo.
-                </p>
-
-                <p className="text-muted-foreground mt-3">
-                  O LinkedIn recompensa quem é constante.
+                  Quando tudo está bem estruturado, você perde menos tempo
+                  procurando conteúdo e ganha mais tempo aprendendo.
                 </p>
               </div>
             </div>
@@ -149,17 +150,17 @@ export default function LinkedinForBeginners() {
           {/* CHECKLIST */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que não pode faltar no seu LinkedIn
+              Checklist de bons materiais de estudo
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Foto profissional",
-                "Título claro (Ex: Desenvolvedor Fullstack)",
-                "Descrição no 'Sobre'",
-                "Projetos adicionados",
-                "Conexões na área",
-                "Atividade constante",
+                "Utilizar fontes confiáveis",
+                "Ter uma apostila ou livro principal",
+                "Complementar com videoaulas",
+                "Criar resumos próprios",
+                "Resolver exercícios regularmente",
+                "Manter materiais organizados",
               ].map((item) => (
                 <div
                   key={item}
@@ -179,9 +180,11 @@ export default function LinkedinForBeginners() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              O LinkedIn é uma das ferramentas mais poderosas para quem está
-              começando na tecnologia. Um perfil bem construído, mesmo simples,
-              já pode abrir portas para oportunidades reais.
+              A qualidade dos materiais utilizados influencia diretamente a
+              eficiência dos estudos. Escolher boas fontes, organizar os
+              conteúdos e utilizar diferentes formatos de aprendizagem pode
+              tornar sua preparação para o vestibular muito mais produtiva e
+              tranquila.
             </p>
           </section>
         </article>

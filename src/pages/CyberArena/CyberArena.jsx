@@ -1,6 +1,8 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const atleticas = [
   {
@@ -86,22 +88,7 @@ export default function CyberArena() {
   const discordMembers = discordWidget?.members ?? [];
 
   return (
-    <div
-      className="relative pt-24 pb-20 overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(135deg, #0a0e27 0%, #1a0e3f 25%, #0f1535 50%, #1a0e3f 75%, #0a0e27 100%)",
-        backgroundSize: "400% 400%",
-        animation: "gradientShift 15s ease infinite",
-      }}
-    >
-      <style>{`
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
+    <div className="relative pt-24 pb-20 overflow-hidden">
       <div className="mx-auto px-4 max-w-6xl">
         <SectionHeader
           badge="Escolha seu clube. Encontre seu squad. Faça parte da comunidade gamer da UNIVESP."
@@ -129,14 +116,35 @@ export default function CyberArena() {
                   Arena. Veja presença e membros online em tempo real.
                 </p>
               </div>
-              <a
-                href="https://discord.gg/ukRkzQ7dr2"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-2xl bg-[#7289da] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#5f73b5]"
-              >
-                Entrar no Discord
-              </a>
+              <div className="flex flex-col gap-3">
+                <Button
+                  asChild
+                  className="flex w-full items-center justify-center gap-2 whitespace-nowrap bg-[#7289da] hover:bg-[#5f73b5]"
+                >
+                  <a
+                    href="https://discord.gg/ukRkzQ7dr2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Entrar no grupo do Discord
+                  </a>
+                </Button>
+
+                <Button
+                  asChild
+                  variant="whatsapp"
+                  className="flex w-full items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  <a
+                    href="https://chat.whatsapp.com/EXAMPLE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="w-3.5 h-3.5 mr-1" />
+                    Entrar no grupo do WhatsApp
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
