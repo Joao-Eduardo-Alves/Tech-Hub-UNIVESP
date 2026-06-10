@@ -31,8 +31,8 @@ export default function Contato() {
             <p className="text-muted-foreground leading-relaxed">
               Olá! Meu nome é João Eduardo Alves e sou o desenvolvedor do Tech
               Hub. Este projeto nasceu da vontade de reunir recursos,
-              informações e iniciativas que possam ajudar estudantes de
-              tecnologia ao longo da graduação e da carreira.
+              informações e iniciativas que possam ajudar e unir os estudantes
+              de tecnologia ao longo da graduação e da carreira.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">
@@ -46,7 +46,7 @@ export default function Contato() {
           <div className="grid gap-6">
             {/* DÚVIDAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <MessageCircle className="text-primary mt-1" />
+              <MessageCircle className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -62,7 +62,7 @@ export default function Contato() {
 
             {/* SUGESTÕES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Lightbulb className="text-primary mt-1" />
+              <Lightbulb className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -78,7 +78,7 @@ export default function Contato() {
 
             {/* PARCERIAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Handshake className="text-primary mt-1" />
+              <Handshake className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -95,7 +95,7 @@ export default function Contato() {
 
             {/* TECNOLOGIA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Code className="text-primary mt-1" />
+              <Code className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -112,7 +112,7 @@ export default function Contato() {
 
             {/* COMUNIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Users className="text-primary mt-1" />
+              <Users className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -158,7 +158,7 @@ export default function Contato() {
           {/* FINAL */}
           <section className="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
             <h2 className="text-xl font-semibold mb-3 text-foreground">
-              Obrigado por visitar o Tech Hub
+              Obrigado por visitar o Tech Hub!
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -169,12 +169,12 @@ export default function Contato() {
 
             <p className="text-muted-foreground leading-relaxed mt-4">
               Caso deseje entrar em contato, utilize os links disponibilizados
-              abaixo. Ficarei feliz em conversar com você.
+              abaixo. Ficarei feliz em conversar com você!
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
               <a
-                href="https://www.linkedin.com/in/seu-perfil"
+                href="https://www.linkedin.com/in/joaoeduardoalves/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-primary/70 hover:bg-primary/5"
@@ -184,7 +184,7 @@ export default function Contato() {
               </a>
 
               <a
-                href="https://www.instagram.com/seu-perfil"
+                href="https://www.instagram.com/duduuz01"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-pink-500/70 hover:bg-pink-50"
@@ -194,7 +194,7 @@ export default function Contato() {
               </a>
 
               <a
-                href="https://github.com/seu-usuario"
+                href="https://github.com/Joao-Eduardo-Alves"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-2xl border border-border/50 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-900/70 hover:bg-slate-100"
