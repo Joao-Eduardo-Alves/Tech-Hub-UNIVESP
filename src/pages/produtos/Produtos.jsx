@@ -140,7 +140,7 @@ export default function Produtos() {
           <div className="mb-10 rounded-2xl border border-primary/20 bg-primary/5 p-5 text-center">
             <p className="text-sm text-foreground">
               <span className="font-semibold">
-                Possui uma arte do seu curso da sua turma?
+                Sua turma possui alguma outra arte de seu curso?
               </span>{" "}
               <a
                 href={requestFormUrl}
