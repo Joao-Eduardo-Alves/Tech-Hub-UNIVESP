@@ -11,6 +11,7 @@ import {
   ExternalLink,
   FileCog,
   Link,
+  MailQuestion,
 } from "lucide-react";
 
 import { useLocation, useParams, useSearchParams } from "react-router-dom";
@@ -233,6 +234,22 @@ export default function ComoComprar() {
 
                 <p className="text-muted-foreground">
                   Após o envio da arte, o pedido será produzido.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
+              <MailQuestion className="text-primary mt-1 shrink-0 w-6 h-6" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  Dúvidas?
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Em caso de dúvida ou qualquer imprevisto ao adquirir seu
+                  produto ou personalizar sua arte, fale comigo através da opção
+                  "Fale comigo" localizada no rodapé do site. Será um prazer
+                  ajudar!
                 </p>
               </div>
             </div>
