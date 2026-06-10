@@ -42,7 +42,7 @@ export default function Report() {
           <div className="grid gap-6">
             {/* LINKS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Link className="text-primary mt-1" />
+              <Link className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -59,7 +59,7 @@ export default function Report() {
 
             {/* VISUAL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Smartphone className="text-primary mt-1" />
+              <Smartphone className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -76,7 +76,7 @@ export default function Report() {
 
             {/* INFORMAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <AlertTriangle className="text-primary mt-1" />
+              <AlertTriangle className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -93,7 +93,7 @@ export default function Report() {
 
             {/* BUGS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Bug className="text-primary mt-1" />
+              <Bug className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -110,7 +110,7 @@ export default function Report() {
 
             {/* DETALHES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Search className="text-primary mt-1" />
+              <Search className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -138,7 +138,7 @@ export default function Report() {
                 "Conteúdo desatualizado",
                 "Erro ao carregar páginas",
                 "Problemas em celulares",
-                "Falhas de navegação",
+                "Erro/Falha de navegação",
                 "Informações incorretas",
               ].map((item) => (
                 <div
@@ -169,7 +169,11 @@ export default function Report() {
               Caso queira relatar um problema, utilize o link abaixo.
             </p>
             <Button asChild>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://forms.gle/AtLqCqriUk9c8j9E9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Reportar problema
               </a>
             </Button>
