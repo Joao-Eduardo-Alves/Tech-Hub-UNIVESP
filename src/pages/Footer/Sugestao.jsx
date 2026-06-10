@@ -60,7 +60,7 @@ export default function Sugestao() {
 
             {/* EXPERIÊNCIA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <LayoutDashboard className="text-primary mt-1" />
+              <LayoutDashboard className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -77,7 +77,7 @@ export default function Sugestao() {
 
             {/* CONTEÚDO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -94,7 +94,7 @@ export default function Sugestao() {
 
             {/* COMUNIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Users className="text-primary mt-1" />
+              <Users className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -111,7 +111,7 @@ export default function Sugestao() {
 
             {/* IDEIAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Lightbulb className="text-primary mt-1" />
+              <Lightbulb className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -173,7 +173,11 @@ export default function Sugestao() {
             </p>
 
             <Button asChild>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://forms.gle/iHNfqhgd2xNkPTvL7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Enviar sugestão
               </a>
             </Button>
