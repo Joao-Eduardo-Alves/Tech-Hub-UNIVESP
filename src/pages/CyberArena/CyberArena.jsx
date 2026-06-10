@@ -141,7 +141,7 @@ export default function CyberArena() {
                   className="flex w-full items-center justify-center gap-2 whitespace-nowrap"
                 >
                   <a
-                    href="https://chat.whatsapp.com/EXAMPLE"
+                    href="https://chat.whatsapp.com/G4L2Z0HRMJeA84Y7HQ3YXi"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
