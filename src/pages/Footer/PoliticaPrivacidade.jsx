@@ -44,7 +44,7 @@ export default function PoliticaPrivacidade() {
           <div className="grid gap-6">
             {/* INFORMAÇÕES COLETADAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Database className="text-primary mt-1" />
+              <Database className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -62,7 +62,7 @@ export default function PoliticaPrivacidade() {
 
             {/* USO DAS INFORMAÇÕES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Shield className="text-primary mt-1" />
+              <Shield className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -79,7 +79,7 @@ export default function PoliticaPrivacidade() {
 
             {/* SERVIÇOS EXTERNOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Globe className="text-primary mt-1" />
+              <Globe className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -97,7 +97,7 @@ export default function PoliticaPrivacidade() {
 
             {/* ATUALIZAÇÕES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <RefreshCw className="text-primary mt-1" />
+              <RefreshCw className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -156,7 +156,7 @@ export default function PoliticaPrivacidade() {
             <p className="text-muted-foreground leading-relaxed mt-4">
               Caso tenha dúvidas relacionadas a esta política ou queira entrar
               em contato sobre questões de privacidade, utilize os canais de
-              comunicação disponibilizados no rodapé da plataforma.
+              comunicação disponibilizados no rodapé do site.
             </p>
           </section>
         </article>

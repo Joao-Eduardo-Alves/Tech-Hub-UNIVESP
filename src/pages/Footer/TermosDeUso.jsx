@@ -43,7 +43,7 @@ export default function TermosDeUso() {
           <div className="grid gap-6">
             {/* USO DA PLATAFORMA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -60,7 +60,7 @@ export default function TermosDeUso() {
 
             {/* CONTEÚDO INFORMATIVO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <ShieldCheck className="text-primary mt-1" />
+              <ShieldCheck className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -78,7 +78,7 @@ export default function TermosDeUso() {
 
             {/* RESPONSABILIDADE DO USUÁRIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <UserCheck className="text-primary mt-1" />
+              <UserCheck className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -96,7 +96,7 @@ export default function TermosDeUso() {
 
             {/* LINKS EXTERNOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Globe className="text-primary mt-1" />
+              <Globe className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -114,7 +114,7 @@ export default function TermosDeUso() {
 
             {/* ALTERAÇÕES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <RefreshCw className="text-primary mt-1" />
+              <RefreshCw className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
