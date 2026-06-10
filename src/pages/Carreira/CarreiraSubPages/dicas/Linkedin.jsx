@@ -41,7 +41,7 @@ export default function LinkedinForBeginners() {
           <div className="grid gap-6">
             {/* PERFIL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <User className="text-primary mt-1" />
+              <User className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -63,7 +63,7 @@ export default function LinkedinForBeginners() {
 
             {/* SOBRE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileText className="text-primary mt-1" />
+              <FileText className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -84,7 +84,7 @@ export default function LinkedinForBeginners() {
 
             {/* ATIVIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <TrendingUp className="text-primary mt-1" />
+              <TrendingUp className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -104,7 +104,7 @@ export default function LinkedinForBeginners() {
 
             {/* NETWORK */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <Network className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -126,7 +126,7 @@ export default function LinkedinForBeginners() {
 
             {/* CONSISTÊNCIA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Linkedin className="text-primary mt-1" />
+              <Linkedin className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

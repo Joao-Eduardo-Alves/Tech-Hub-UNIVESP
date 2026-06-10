@@ -44,7 +44,7 @@ export default function AIRoadmap() {
           <div className="grid gap-6">
             {/* BASE MATEMÁTICA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Sigma className="text-primary mt-1" />
+              <Sigma className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -66,7 +66,7 @@ export default function AIRoadmap() {
 
             {/* PYTHON */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Code2 className="text-primary mt-1" />
+              <Code2 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -88,7 +88,7 @@ export default function AIRoadmap() {
 
             {/* MACHINE LEARNING */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Brain className="text-primary mt-1" />
+              <Brain className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -110,7 +110,7 @@ export default function AIRoadmap() {
 
             {/* DEEP LEARNING */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Bot className="text-primary mt-1" />
+              <Bot className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -131,7 +131,7 @@ export default function AIRoadmap() {
 
             {/* MLOPS / DEPLOY */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

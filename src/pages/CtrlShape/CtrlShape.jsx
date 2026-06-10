@@ -45,7 +45,7 @@ export default function CtrlShape() {
           <div className="grid gap-6">
             {/* TREINOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Dumbbell className="text-primary mt-1" />
+              <Dumbbell className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -62,7 +62,7 @@ export default function CtrlShape() {
 
             {/* COMUNIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Users className="text-primary mt-1" />
+              <Users className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -79,7 +79,7 @@ export default function CtrlShape() {
 
             {/* SAÚDE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Heart className="text-primary mt-1" />
+              <Heart className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -96,7 +96,7 @@ export default function CtrlShape() {
 
             {/* METAS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Trophy className="text-primary mt-1" />
+              <Trophy className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -113,7 +113,7 @@ export default function CtrlShape() {
 
             {/* WHATSAPP */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <MessageCircle className="text-primary mt-1" />
+              <MessageCircle className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

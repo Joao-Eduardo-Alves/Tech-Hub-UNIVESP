@@ -32,7 +32,7 @@ const atleticas = [
   {
     nome: "Blockforge Union ",
     descricao:
-      "Construímos mais que mundos!. A comunidade de Minecraft da UNIVESP.",
+      "Construímos mais que mundos! A comunidade de Minecraft da UNIVESP.",
     brasao: "/cyberArena/Blockforge-Union.png",
     discord: "https://discord.gg/NXxY2zFpZZ",
     glowColor: "#22c55e",

@@ -44,7 +44,7 @@ export default function DataRoadmap() {
           <div className="grid gap-6">
             {/* BASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileSpreadsheet className="text-primary mt-1" />
+              <FileSpreadsheet className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -66,7 +66,7 @@ export default function DataRoadmap() {
 
             {/* SQL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Database className="text-primary mt-1" />
+              <Database className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -88,7 +88,7 @@ export default function DataRoadmap() {
 
             {/* ESTATÍSTICA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Sigma className="text-primary mt-1" />
+              <Sigma className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -109,7 +109,7 @@ export default function DataRoadmap() {
 
             {/* ANALYTICS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BarChart3 className="text-primary mt-1" />
+              <BarChart3 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -131,7 +131,7 @@ export default function DataRoadmap() {
 
             {/* PIPELINE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Workflow className="text-primary mt-1" />
+              <Workflow className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -153,7 +153,7 @@ export default function DataRoadmap() {
 
             {/* APLICAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

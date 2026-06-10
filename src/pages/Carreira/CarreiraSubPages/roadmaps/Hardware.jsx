@@ -44,7 +44,7 @@ export default function HardwareRoadmap() {
           <div className="grid gap-6">
             {/* BASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Cpu className="text-primary mt-1" />
+              <Cpu className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -65,7 +65,7 @@ export default function HardwareRoadmap() {
 
             {/* COMPONENTES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <CircuitBoard className="text-primary mt-1" />
+              <CircuitBoard className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -87,7 +87,7 @@ export default function HardwareRoadmap() {
 
             {/* MONTAGEM */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Wrench className="text-primary mt-1" />
+              <Wrench className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -109,7 +109,7 @@ export default function HardwareRoadmap() {
 
             {/* ELETRÔNICA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Zap className="text-primary mt-1" />
+              <Zap className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -130,7 +130,7 @@ export default function HardwareRoadmap() {
 
             {/* SEGURANÇA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <ShieldCheck className="text-primary mt-1" />
+              <ShieldCheck className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -152,7 +152,7 @@ export default function HardwareRoadmap() {
 
             {/* EVOLUÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

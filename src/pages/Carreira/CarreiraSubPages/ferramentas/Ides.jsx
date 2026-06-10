@@ -43,7 +43,7 @@ export default function IdeGuide() {
           <div className="grid gap-6">
             {/* VS CODE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Code2 className="text-primary mt-1" />
+              <Code2 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -64,7 +64,7 @@ export default function IdeGuide() {
 
             {/* INTELLIJ */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Cpu className="text-primary mt-1" />
+              <Cpu className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -84,7 +84,7 @@ export default function IdeGuide() {
 
             {/* VISUAL STUDIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Laptop className="text-primary mt-1" />
+              <Laptop className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -105,7 +105,7 @@ export default function IdeGuide() {
 
             {/* PYCHARM */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Zap className="text-primary mt-1" />
+              <Zap className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -125,7 +125,7 @@ export default function IdeGuide() {
 
             {/* ANDROID STUDIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Terminal className="text-primary mt-1" />
+              <Terminal className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -146,7 +146,7 @@ export default function IdeGuide() {
 
             {/* DBeaver */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Database className="text-primary mt-1" />
+              <Database className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

@@ -44,7 +44,7 @@ export default function FreeDeployTools() {
           <div className="grid gap-6">
             {/* VERCEL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -66,7 +66,7 @@ export default function FreeDeployTools() {
 
             {/* NETLIFY */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Globe className="text-primary mt-1" />
+              <Globe className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -87,7 +87,7 @@ export default function FreeDeployTools() {
 
             {/* RAILWAY */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Server className="text-primary mt-1" />
+              <Server className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -108,7 +108,7 @@ export default function FreeDeployTools() {
 
             {/* RENDER */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Cloud className="text-primary mt-1" />
+              <Cloud className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -129,7 +129,7 @@ export default function FreeDeployTools() {
 
             {/* GITHUB PAGES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Upload className="text-primary mt-1" />
+              <Upload className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -149,7 +149,7 @@ export default function FreeDeployTools() {
 
             {/* FIREBASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <MonitorSmartphone className="text-primary mt-1" />
+              <MonitorSmartphone className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

@@ -43,7 +43,7 @@ export default function BackendRoadmap() {
           <div className="grid gap-6">
             {/* BASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Server className="text-primary mt-1" />
+              <Server className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -65,7 +65,7 @@ export default function BackendRoadmap() {
 
             {/* LINGUAGEM */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Workflow className="text-primary mt-1" />
+              <Workflow className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -86,7 +86,7 @@ export default function BackendRoadmap() {
 
             {/* BANCO DE DADOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Database className="text-primary mt-1" />
+              <Database className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -108,7 +108,7 @@ export default function BackendRoadmap() {
 
             {/* SEGURANÇA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <ShieldCheck className="text-primary mt-1" />
+              <ShieldCheck className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -130,7 +130,7 @@ export default function BackendRoadmap() {
 
             {/* DEPLOY */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

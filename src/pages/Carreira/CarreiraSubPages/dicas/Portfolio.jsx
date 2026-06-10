@@ -41,7 +41,7 @@ export default function PortfolioTips() {
           <div className="grid gap-6">
             {/* BASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FolderGit2 className="text-primary mt-1" />
+              <FolderGit2 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -62,7 +62,7 @@ export default function PortfolioTips() {
 
             {/* PROJETOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Code2 className="text-primary mt-1" />
+              <Code2 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -83,7 +83,7 @@ export default function PortfolioTips() {
 
             {/* ORGANIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <LayoutGrid className="text-primary mt-1" />
+              <LayoutGrid className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -104,7 +104,7 @@ export default function PortfolioTips() {
 
             {/* DEPLOY */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -124,7 +124,7 @@ export default function PortfolioTips() {
 
             {/* VISUAL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Eye className="text-primary mt-1" />
+              <Eye className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

@@ -44,7 +44,7 @@ export default function StageTips() {
           <div className="grid gap-6">
             {/* BASE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -66,7 +66,7 @@ export default function StageTips() {
 
             {/* PORTFÓLIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Briefcase className="text-primary mt-1" />
+              <Briefcase className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -88,7 +88,7 @@ export default function StageTips() {
 
             {/* NETWORK */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <Network className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -109,7 +109,7 @@ export default function StageTips() {
 
             {/* INSCRIÇÕES */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Target className="text-primary mt-1" />
+              <Target className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -129,7 +129,7 @@ export default function StageTips() {
 
             {/* CONSTÂNCIA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -149,7 +149,7 @@ export default function StageTips() {
             </div>
             {/* ESTÁGIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <GraduationCap className="text-primary mt-1" />
+              <GraduationCap className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

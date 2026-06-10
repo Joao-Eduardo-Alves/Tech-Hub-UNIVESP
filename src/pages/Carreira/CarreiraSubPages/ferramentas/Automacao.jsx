@@ -45,7 +45,7 @@ export default function Automacao() {
           <div className="grid gap-6">
             {/* CHATGPT */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Bot className="text-primary mt-1" />
+              <Bot className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -66,7 +66,7 @@ export default function Automacao() {
 
             {/* CLAUDE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Brain className="text-primary mt-1" />
+              <Brain className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -87,7 +87,7 @@ export default function Automacao() {
 
             {/* BASE44 */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <LayoutTemplate className="text-primary mt-1" />
+              <LayoutTemplate className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -109,7 +109,7 @@ export default function Automacao() {
 
             {/* BOLT */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -130,7 +130,7 @@ export default function Automacao() {
 
             {/* LOVABLE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Sparkles className="text-primary mt-1" />
+              <Sparkles className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -151,7 +151,7 @@ export default function Automacao() {
 
             {/* NOTEBOOKLM */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Wand2 className="text-primary mt-1" />
+              <Wand2 className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

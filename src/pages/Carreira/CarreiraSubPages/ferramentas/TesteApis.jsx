@@ -46,7 +46,7 @@ export default function TesteApis() {
           <div className="grid gap-6">
             {/* POSTMAN */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Send className="text-primary mt-1" />
+              <Send className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -69,7 +69,7 @@ export default function TesteApis() {
 
             {/* INSOMNIA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Moon className="text-primary mt-1" />
+              <Moon className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -92,7 +92,7 @@ export default function TesteApis() {
 
             {/* SWAGGER */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -114,7 +114,7 @@ export default function TesteApis() {
 
             {/* HOPPSCOTCH */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Zap className="text-primary mt-1" />
+              <Zap className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -137,7 +137,7 @@ export default function TesteApis() {
 
             {/* BRUNO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Boxes className="text-primary mt-1" />
+              <Boxes className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">Bruno</h3>
@@ -157,7 +157,7 @@ export default function TesteApis() {
 
             {/* JSONs */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <FileJson className="text-primary mt-1" />
+              <FileJson className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">

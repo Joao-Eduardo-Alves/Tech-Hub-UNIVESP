@@ -9,6 +9,8 @@ import {
   CheckCircle,
   ShoppingCart,
   ExternalLink,
+  FileCog,
+  Link,
 } from "lucide-react";
 
 import { useLocation, useParams, useSearchParams } from "react-router-dom";
@@ -127,7 +129,7 @@ export default function ComoComprar() {
             {/* PASSOS */}
             {/* DOWNLOAD */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
-              <Download className="text-primary mt-1" />
+              <Download className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div className="w-full">
                 <h3 className="font-semibold text-lg text-foreground">
@@ -152,7 +154,7 @@ export default function ComoComprar() {
 
             {/* PERSONALIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
-              <Palette className="text-primary mt-1" />
+              <Palette className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -161,37 +163,72 @@ export default function ComoComprar() {
 
                 <p className="text-muted-foreground">
                   Após baixar os arquivos, abra a imagem "logoCostas" em um
-                  editor de imagens (como o Canva), e adicione seu nome no local
-                  indicado conforme a foto a cima (Recomenda-se a fonte
-                  "Michroma" para o nome). Salve a imagem editada
+                  editor de imagens (como o Canva), e adicione seu nome na parte
+                  inferior da imagem (Recomenda-se a fonte "GRADUATE" para o
+                  nome). Salve a imagem editada.
                 </p>
+                <a
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition"
+                  href="https://www.canva.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Link className="w-4 h-4" />
+                  Acesse aqui o Canva
+                </a>
+              </div>
+            </div>
+            {/* PERSONALIZAÇÃO */}
+            <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
+              <FileCog className="text-primary mt-1 shrink-0 w-6 h-6" />
+
+              <div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  3. Remova o fundo da imagem
+                </h3>
+
+                <p className="text-muted-foreground">
+                  Após personalizar a logo das costas com seu nome, acesse o
+                  link abaixo, faça upload da imagem ja editada, remova o fundo
+                  e baixe o arquivo.
+                </p>
+                <a
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition"
+                  href="https://www.photoroom.com/pt-br/tools/background-remover?utm_source=google&utm_medium=search&utm_id=23359963677&utm_campaign=Web_Search_AI-Max_BAU_BR_pt_tROAS&utm_content=788485004792&adset_name=Add-Background&ad_name=NA&adset_id=188917621646&utm_term=recortar%20fundo&matchtype=b&network=g&device=c&placement=&gad_source=1&gad_campaignid=23359963677&gbraid=0AAAAABrDMJh72tQpGTKxkdYc9Io50CtY4&gclid=CjwKCAjw857RBhAgEiwAI-1yKKC-Q9VHo26huI4M-ntrHkgNDrqyYb_UPRTn5jAUy6YaqHpkPuPlaRoCwIIQAvD_BwE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Link className="w-4 h-4" />
+                  Remova aqui o fundo da imagem
+                </a>
               </div>
             </div>
 
             {/* ENVIO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
-              <Upload className="text-primary mt-1" />
+              <Upload className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  3. Envie o arquivo
+                  4. Envie o arquivo
                 </h3>
 
                 <p className="text-muted-foreground">
-                  Envie sua arte personalizada pelo chat do pedido na Shopee
-                  conforme orientação do anúncio (Qualquer dúvida entrar em
-                  contato diretamente com vendedor).
+                  Envie sua logo personalizada (sem fundo) e as demais artes
+                  baixadas (incluindo a imagem de referencia) pelo chat do
+                  pedido na Shopee conforme orientação do anúncio (Qualquer
+                  dúvida entrar em contato diretamente com vendedor).
                 </p>
               </div>
             </div>
 
             {/* FINALIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50">
-              <ShoppingCart className="text-primary mt-1" />
+              <ShoppingCart className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
-                  4. Aguarde a produção
+                  5. Aguarde a produção
                 </h3>
 
                 <p className="text-muted-foreground">
@@ -219,7 +256,7 @@ export default function ComoComprar() {
                   key={item}
                   className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-card"
                 >
-                  <CheckCircle className="text-primary w-5 h-5" />
+                  <CheckCircle className="text-primary mt-1 shrink-0 w-5 h-5" />
                   <span className="text-foreground font-medium">{item}</span>
                 </div>
               ))}

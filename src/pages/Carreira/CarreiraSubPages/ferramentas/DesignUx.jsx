@@ -45,7 +45,7 @@ export default function DesignUx() {
           <div className="grid gap-6">
             {/* FIGMA */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Figma className="text-primary mt-1" />
+              <Figma className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">Figma</h3>
@@ -65,7 +65,7 @@ export default function DesignUx() {
 
             {/* EXCALIDRAW */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <PenTool className="text-primary mt-1" />
+              <PenTool className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -86,7 +86,7 @@ export default function DesignUx() {
 
             {/* COOLORS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Palette className="text-primary mt-1" />
+              <Palette className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -107,7 +107,7 @@ export default function DesignUx() {
 
             {/* WHIMSICAL */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Layout className="text-primary mt-1" />
+              <Layout className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -128,7 +128,7 @@ export default function DesignUx() {
 
             {/* MIRO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Users className="text-primary mt-1" />
+              <Users className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">Miro</h3>
@@ -146,7 +146,7 @@ export default function DesignUx() {
 
             {/* DIAGRAMS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Workflow className="text-primary mt-1" />
+              <Workflow className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
