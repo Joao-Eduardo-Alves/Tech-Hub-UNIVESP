@@ -30,9 +30,9 @@ export default function Contato() {
 
             <p className="text-muted-foreground leading-relaxed">
               Olá! Meu nome é João Eduardo Alves e sou o desenvolvedor do Tech
-              Hub. Este projeto nasceu da vontade de reunir recursos,
-              informações e iniciativas que possam ajudar e unir os estudantes
-              de tecnologia ao longo da graduação e da carreira.
+              Hub UNIVESP. Sou formado em Análise e Desenvolvimento de Sistemas
+              pela Universidade Paulista e, em 2026, iniciei minha graduação em
+              Engenharia de Computação na UNIVESP.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mt-4">

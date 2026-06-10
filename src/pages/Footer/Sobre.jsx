@@ -23,15 +23,23 @@ export default function AboutTechHub() {
               Um projeto feito por estudantes para estudantes
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              O Tech Hub UNIVESP nasceu ao observar a dificuldade que muitos
-              estudantes da modalidade EAD enfrentam para encontrar informações
-              relevantes, dicas de carreira, recursos acadêmicos e conexões com
-              outros estudantes da comunidade. A ideia é criar um espaço
-              centralizado onde essas informações possam ser facilmente
-              acessadas, compartilhadas e atualizadas pela própria comunidade.
+              O TechHub nasceu da percepção de um desafio comum no ensino a
+              distância: a dificuldade de criar conexões entre estudantes que
+              compartilham os mesmos objetivos, mas muitas vezes percorrem sua
+              jornada acadêmica de forma isolada. Durante minha primeira
+              graduação, vivenciei essa realidade e percebi o quanto a troca de
+              experiências, o acesso a informações relevantes e o apoio da
+              comunidade podem fazer a diferença.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Com esse propósito, criei o Tech Hub para reunir conteúdos,
+              oportunidades e iniciativas que contribuam para o desenvolvimento
+              acadêmico, profissional e pessoal dos estudantes de tecnologia,
+              fortalecendo a colaboração e aproximando pessoas ao longo de toda
+              a graduação e carreira.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4" />A
-            proposta é simples: facilitar o acesso a conteúdos úteis para
+            PROPOSTA É SIMPLES: facilitar o acesso a conteúdos úteis para
             estudantes de tecnologia, reunindo materiais, iniciativas da
             comunidade, dicas de carreira e recursos que possam contribuir para
             o desenvolvimento acadêmico e profissional.
@@ -40,7 +48,7 @@ export default function AboutTechHub() {
           <div className="grid gap-6">
             {/* MISSÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Target className="text-primary mt-1" />
+              <Target className="text-primary mt-1 shrink-0 w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
                   Nossa missão
@@ -55,7 +63,7 @@ export default function AboutTechHub() {
             </div>
             {/* COMUNIDADE */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Network className="text-primary mt-1" />
+              <Network className="text-primary mt-1 shrink-0 w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
                   Comunidade em primeiro lugar
@@ -69,7 +77,7 @@ export default function AboutTechHub() {
             </div>
             {/* CONHECIMENTO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <BookOpen className="text-primary mt-1" />
+              <BookOpen className="text-primary mt-1 shrink-0 w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
                   Compartilhamento de conhecimento
@@ -85,7 +93,7 @@ export default function AboutTechHub() {
 
             {/* EVOLUÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Rocket className="text-primary mt-1" />
+              <Rocket className="text-primary mt-1 shrink-0 w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
                   Evolução contínua
