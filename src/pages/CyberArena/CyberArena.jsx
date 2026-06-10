@@ -1,7 +1,7 @@
 import SectionHeader from "@/components/shared/SectionHeader";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { Gamepad2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const atleticas = [
@@ -92,7 +92,12 @@ export default function CyberArena() {
       <div className="mx-auto px-4 max-w-6xl">
         <SectionHeader
           badge="Escolha seu clube. Encontre seu squad. Faça parte da comunidade gamer da UNIVESP."
-          title="Cyber Arena"
+          title={
+            <span className="flex items-center justify-center gap-2">
+              <Gamepad2 className="text-primary mt-1 shrink-0 w-10 h-10" />
+              Cyber Arena
+            </span>
+          }
           description="A Cyber Arena é o ponto de encontro dos estudantes gamers da UNIVESP — um ecossistema de clubes, comunidades e experiências criadas para conectar jogadores através da competição, estratégia e colaboração."
         />
 

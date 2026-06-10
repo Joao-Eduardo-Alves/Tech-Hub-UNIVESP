@@ -9,6 +9,7 @@ import {
   Video,
   MessageCircle,
   CheckCircle,
+  HeartHandshakeIcon,
 } from "lucide-react";
 
 export default function SaveUnivesp() {
@@ -27,7 +28,12 @@ export default function SaveUnivesp() {
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
           badge="Mobilização Estudantil"
-          title="Salve a UNIVESP"
+          title={
+            <span className="flex items-center justify-center gap-2">
+              <HeartHandshakeIcon className="text-primary mt-1 shrink-0 w-10 h-10" />
+              Salve a UNIVESP
+            </span>
+          }
           description="Uma mobilização de estudantes em defesa da continuidade do ensino a distância nas engenharias e licenciaturas da UNIVESP."
         />
 

@@ -16,7 +16,12 @@ export default function CtrlShape() {
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeader
           badge="Comunidade Fitness"
-          title="Ctrl + Shape"
+          title={
+            <span className="flex items-center justify-center gap-2">
+              <Dumbbell className="text-primary mt-1 shrink-0 w-10 h-10" />
+              Ctrl + Shape
+            </span>
+          }
           description="Uma comunidade criada para estudantes da UNIVESP que desejam evoluir na saúde, nos treinos e construir hábitos mais consistentes."
         />
 
