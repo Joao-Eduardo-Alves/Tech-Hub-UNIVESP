@@ -16,6 +16,7 @@ import {
   Bot,
   Router,
   SquareDashedBottomCode,
+  BriefcaseBusiness,
 } from "lucide-react";
 import SectionHeader from "../../components/shared/SectionHeader";
 import FeatureCard from "@/components/shared/FeatureCard";
@@ -232,6 +233,11 @@ export default function SectionsCareer() {
   return (
     <section className="py-20 lg:py-28 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeader
+          badge="Carreira"
+          title="Roadmaps, dicas práticas e ferramentas"
+          description="Transforme seu interesse por tecnologia em uma carreira sólida. Encontre guias, ferramentas e orientações para evoluir do aprendizado inicial às primeiras oportunidades profissionais."
+        />
         <div className="grid md:grid-cols-3 gap-8">
           {guides.map((guide, i) => (
             <FeatureCard
