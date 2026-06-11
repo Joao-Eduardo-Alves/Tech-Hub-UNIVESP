@@ -10,7 +10,7 @@ const atleticas = [
     descricao:
       "Disciplina, foco e vitória. O clube oficial de Counter-Strike 2 da UNIVESP.",
     brasao: "/cyberArena/Iron-Wolves.png",
-    discord: "https://discord.gg/ukRkzQ7dr2",
+    discord: "https://discord.gg/TVQQzewVyD",
     glowColor: "#ef4444",
   },
   {
@@ -18,7 +18,7 @@ const atleticas = [
     descricao:
       "Precisão, frieza e vitória. Entre para a elite tática do Valorant da UNIVESP.",
     brasao: "/cyberArena/Polar-Vanguards.png",
-    discord: "https://discord.gg/wp74haQC2t",
+    discord: "https://discord.gg/9nsmUjxbAx",
     glowColor: "#06b6d4",
   },
   {
@@ -26,7 +26,7 @@ const atleticas = [
     descricao:
       "Estratégia, caos e glória. A comunidade de League of Legends da UNIVESP.",
     brasao: "/cyberArena/Rift-Ravens.png",
-    discord: "https://discord.gg/UKPqZNHcZ5",
+    discord: "https://discord.gg/fm3M7GRgHA",
     glowColor: "#a855f7",
   },
   {
@@ -34,7 +34,7 @@ const atleticas = [
     descricao:
       "Construímos mais que mundos! A comunidade de Minecraft da UNIVESP.",
     brasao: "/cyberArena/Blockforge-Union.png",
-    discord: "https://discord.gg/NXxY2zFpZZ",
+    discord: "https://discord.gg/gWfDz5xru5",
     glowColor: "#22c55e",
   },
 ];
@@ -86,6 +86,7 @@ export default function CyberArena() {
 
   /** @type {Array<{id:string,name:string,status:string}>} */
   const discordMembers = discordWidget?.members ?? [];
+  console.log(discordMembers);
 
   return (
     <div className="relative pt-24 pb-20 overflow-hidden">
@@ -127,7 +128,7 @@ export default function CyberArena() {
                   className="flex w-full items-center justify-center gap-2 whitespace-nowrap bg-[#7289da] hover:bg-[#5f73b5]"
                 >
                   <a
-                    href="https://discord.gg/Gqt2YA3n"
+                    href="https://discord.gg/R4ErjngpvD"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -200,7 +201,8 @@ export default function CyberArena() {
                   <p className="text-sm text-rose-300">{discordError}</p>
                 ) : discordMembers.length ? (
                   discordMembers.slice(0, 5).map((member) => {
-                    const memberName = member.name || member.id || "Usuário";
+                    const memberName =
+                      member.username || member.id || "Usuário";
 
                     return (
                       <div
@@ -232,6 +234,7 @@ export default function CyberArena() {
         </div>
 
         <div className="mt-10 space-y-8">
+          <h2>Clubes:</h2>
           {atleticas.map((atl, idx) => (
             <motion.div
               key={idx}
