@@ -63,7 +63,7 @@ export default function SaveUnivesp() {
           <div className="grid gap-6">
             {/* O QUE ESTÁ ACONTECENDO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Shield className="text-primary mt-1" />
+              <Shield className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -85,7 +85,7 @@ export default function SaveUnivesp() {
 
             {/* IMPACTADOS */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <GraduationCap className="text-primary mt-1" />
+              <GraduationCap className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
@@ -107,7 +107,7 @@ export default function SaveUnivesp() {
 
             {/* MOBILIZAÇÃO */}
             <div className="flex gap-4 p-5 rounded-2xl border border-border/50 hover:border-primary/20 transition">
-              <Users className="text-primary mt-1" />
+              <Users className="text-primary mt-1 shrink-0 w-6 h-6" />
 
               <div>
                 <h3 className="font-semibold text-lg text-foreground">
