@@ -127,7 +127,7 @@ export default function CyberArena() {
                   className="flex w-full items-center justify-center gap-2 whitespace-nowrap bg-[#7289da] hover:bg-[#5f73b5]"
                 >
                   <a
-                    href="https://discord.gg/ukRkzQ7dr2"
+                    href="https://discord.gg/Gqt2YA3n"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
