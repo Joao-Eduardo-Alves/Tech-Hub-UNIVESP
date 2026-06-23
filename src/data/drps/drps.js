@@ -20,4 +20,4 @@ export const drps = [
 ];
 
 export const generalGroupLink =
-  "https://chat.whatsapp.com/KQyIBgHNhB1D1dVxzR2Lrx?s=sw&p=a&mlu=0";
+  "https://chat.whatsapp.com/B831EhCueBzFjMfh1A8IzY";

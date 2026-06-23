@@ -116,7 +116,7 @@ export default function Polos() {
           <div className="w-full max-w-xl text-center p-6 rounded-2xl border border-border/50 bg-card shadow-lg shadow-primary/5">
             <p className="text-sm text-muted-foreground mb-3">
               {exibindoDrp === "todos"
-                ? "Grupo geral de todos os polos e turmas de tecnologia"
+                ? "Grupo geral do Tech Hub UNIVESP"
                 : `Grupo geral do ${selectedDrp?.id}`}
             </p>
 
