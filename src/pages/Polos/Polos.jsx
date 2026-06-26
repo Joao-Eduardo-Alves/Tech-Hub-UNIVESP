@@ -101,7 +101,51 @@ export default function Polos() {
   });
 
   const selectedDrp = drpMap[exibindoDrp];
+  const [discordWidget, setDiscordWidget] = useState(
+    /** @type {any|null} */ (null),
+  );
+  const [discordLoading, setDiscordLoading] = useState(true);
+  const [discordError, setDiscordError] = useState(
+    /** @type {string|null} */ (null),
+  );
 
+  useEffect(() => {
+    let active = true;
+
+    async function loadDiscordWidget() {
+      try {
+        const response = await fetch(
+          "https://discord.com/api/guilds/1398033289922740234/widget.json",
+        );
+
+        if (!response.ok) {
+          throw new Error(`Erro ao carregar Discord: ${response.status}`);
+        }
+
+        const data = await response.json();
+        if (active) {
+          setDiscordWidget(data);
+        }
+      } catch (error) {
+        if (active) {
+          setDiscordError("Não foi possível carregar os dados do Discord.");
+          console.error(error);
+        }
+      } finally {
+        if (active) {
+          setDiscordLoading(false);
+        }
+      }
+    }
+
+    loadDiscordWidget();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  /** @type {Array<{id:string,name:string,status:string}>} */
   return (
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -111,9 +155,63 @@ export default function Polos() {
           description="Encontre seu polo por DRP, conecte-se com outros estudantes e participe de grupos de estudo no WhatsApp."
         />
 
-        {/* GRUPO CENTRALIZADO */}
+        <div className="mt-10 mb-10 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="group w-full max-w-3xl rounded-2xl border border-purple-500/20 bg-gradient-to-br from-slate-950/95 to-slate-900/90 p-6 text-center shadow-lg shadow-purple-500/10"
+          >
+            <div className="flex flex-col items-center text-center">
+              <div>
+                <span className="inline-flex rounded-full bg-purple-500/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-purple-300">
+                  Discord Widget
+                </span>
+                <h2 className="mt-4 text-3xl font-semibold text-white">
+                  Comunidade Discord
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm text-slate-400">
+                  Dados atualizados diretamente do servidor Discord da UNIVESP
+                  Community. Veja a quantidade de membros online em tempo real.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-center">
+              <div className="rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-2.5">
+                <div className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_10px_#4ade80]" />
+                  <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
+                    Online agora
+                  </p>
+                </div>
+                <p className="mt-1 text-2xl font-semibold text-white leading-none">
+                  {discordLoading
+                    ? "..."
+                    : (discordWidget?.presence_count ?? "-")}
+                </p>
+              </div>
+            </div>
+            <div className="mt-6 flex justify-center">
+              <Button
+                asChild
+                size="sm"
+                className="rounded-xl h-10 px-8 bg-[#7289da] hover:bg-[#5f73b5]"
+              >
+                <a
+                  href="https://discord.gg/8mgSBYpFU5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Entrar no grupo do Discord
+                </a>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+
         <div className="mb-10 flex justify-center">
-          <div className="w-full max-w-xl text-center p-6 rounded-2xl border border-border/50 bg-card shadow-lg shadow-primary/5">
+          <div className="w-full max-w-3xl text-center p-6 rounded-2xl border border-border/50 bg-card shadow-lg shadow-primary/5">
             <p className="text-sm text-muted-foreground mb-3">
               {exibindoDrp === "todos"
                 ? "Grupo geral do Tech Hub UNIVESP"
@@ -140,7 +238,7 @@ export default function Polos() {
                     rel="noopener noreferrer"
                   >
                     <MessageCircle className="w-3.5 h-3.5 mr-1" />
-                    Entrar no grupo geral
+                    Entrar no grupo do WhatsApp
                   </a>
                 </Button>
               ) : (
@@ -172,7 +270,7 @@ export default function Polos() {
                   rel="noopener noreferrer"
                 >
                   <MessageCircle className="w-3.5 h-3.5 mr-1" />
-                  Entrar no grupo do DRP
+                  Entrar no grupo do WhatsApp
                 </a>
               </Button>
             ) : (

@@ -9,8 +9,7 @@ const navItems = [
   { label: "Guia do Calouro", path: "/calouro" },
   { label: "Guia de Polos", path: "/polos" },
   { label: "Produtos", path: "/produtos" },
-  { label: "Cyber Arena", path: "/cyber-arena" },
-  { label: "Ctrl + Shape", path: "/ctrl-shape" },
+  { label: "Comunidades", path: "/comunidades" },
   { label: "Carreira", path: "/carreira" },
   { label: "Cursos", path: "/cursos" },
   { label: "Guia do Vestibulando", path: "/vestibulando" },
@@ -55,6 +54,8 @@ export default function Header() {
     if (path === "/carreira" && location.pathname.startsWith("/carreira"))
       return true;
     if (path === "/produtos" && location.pathname.startsWith("/produtos"))
+      return true;
+    if (path === "/comunidades" && location.pathname.startsWith("/comunidades"))
       return true;
     if (
       path === "/vestibulando" &&

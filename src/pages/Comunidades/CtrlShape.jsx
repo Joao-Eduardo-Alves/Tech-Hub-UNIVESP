@@ -135,33 +135,6 @@ export default function CtrlShape() {
             </div>
           </div>
 
-          {/* BENEFÍCIOS */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-6 text-foreground">
-              O que você encontrará na comunidade
-            </h2>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                "Troca de experiências",
-                "Motivação diária",
-                "Apoio emocional",
-                "Desafios e metas no GymRats",
-                "Dicas de treinos e alimentação",
-                "Networking entre estudantes",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-card"
-                >
-                  <CheckCircle className="text-primary w-5 h-5" />
-
-                  <span className="text-foreground font-medium">{item}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-
           {/* CTA */}
           <section className="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
             <h2 className="text-xl font-semibold mb-3 text-foreground">
@@ -189,7 +162,7 @@ export default function CtrlShape() {
                 rel="noopener noreferrer"
               >
                 <MessageCircle className="w-3.5 h-3.5 mr-1" />
-                Entrar no Grupo
+                Entrar no Grupo do WhatsApp
               </a>
             </Button>
           </section>

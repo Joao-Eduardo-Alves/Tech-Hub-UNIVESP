@@ -23,8 +23,8 @@ import Dados from "./pages/Carreira/CarreiraSubPages/roadmaps/Dados";
 import Vaga from "./pages/Carreira/CarreiraSubPages/dicas/Vaga";
 import Portfolio from "./pages/Carreira/CarreiraSubPages/dicas/Portfolio";
 import Linkedin from "./pages/Carreira/CarreiraSubPages/dicas/Linkedin";
-import CyberArena from "./pages/CyberArena/CyberArena";
-import CtrlShape from "./pages/CtrlShape/CtrlShape";
+import CyberArena from "./pages/Comunidades/CyberArena";
+import CtrlShape from "./pages/Comunidades/CtrlShape";
 import ComoComprar from "./pages/produtos/ComoComprar";
 import SaveUnivesp from "./pages/SaveUnivesp/SaveUnivesp";
 import Sobre from "./pages/Footer/Sobre";
@@ -43,6 +43,8 @@ import Matematica from "./pages/Vestibulando/VestibulandoSubPages/Matematica";
 import GestaoDeTempo from "./pages/Vestibulando/VestibulandoSubPages/GestaoDeTempo";
 import DiaDaProva from "./pages/Vestibulando/VestibulandoSubPages/DiaDaProva";
 import MaterialEstudo from "./pages/Vestibulando/VestibulandoSubPages/MaterialEstudo";
+import Comunidades from "./pages/Comunidades/Home";
+import Xadrez from "./pages/Comunidades/Xadrez";
 const App = () => {
   return (
     <>
@@ -102,8 +104,10 @@ const App = () => {
             path="/calouro/dicaTrabalhoEstudo"
             element={<DicaTrabalhoEstudo />}
           />
-          <Route path="/cyber-arena" element={<CyberArena />} />
-          <Route path="/ctrl-shape" element={<CtrlShape />} />
+          <Route path="/comunidades" element={<Comunidades />} />
+          <Route path="/comunidades/ctrl-shape" element={<CtrlShape />} />
+          <Route path="/comunidades/cyber-arena" element={<CyberArena />} />
+          <Route path="/comunidades/xadrez" element={<Xadrez />} />
           <Route path="/salve-a-univesp" element={<SaveUnivesp />} />
           <Route path="/produtos/como-comprar/:tag" element={<ComoComprar />} />
           <Route path="/sobre" element={<Sobre />} />
